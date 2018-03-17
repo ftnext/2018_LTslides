@@ -27,4 +27,27 @@
 
 ---
 
+### 機械学習に一から取り組む必要がない場合
+
+- 例: 「画像に何が写っているか知りたい」 |
+- 公開されている機械学習の結果(AI)を利用しよう |
+
++++
+
+### 「画像に何が写っているか知りたい」
+
+- APIとして公開されている学習済みのAIを使う |
+- 例: Computer Vision API (Microsoft) |
+- 自記事で恐縮ですが...[Python入門者でもComputer Vision APIを叩くのは怖くない](https://qiita.com/ftnext/items/970069ff509f69812f23) |
+
++++
+
+### 学習済みのAIのカスタマイズも可能
+
+- Custom Vision Service (Microsoft)
+- Visual Recognition (IBM)
+- etc.
+
+---
+
 ### ご清聴ありがとうございました
