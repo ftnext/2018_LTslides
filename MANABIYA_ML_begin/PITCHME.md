@@ -151,6 +151,12 @@
   - kaggle: データ解析コンペのプラットフォーム |
   - kernel: 参加者が公開しているコンペでのデータ解析の事例 |
 
++++
+
+### kaggleのkernel
+
+![kaggleのkernelのイメージ](MANABIYA_ML_begin/assets/images/kaggle-kernel.png)
+
 ---
 
 ### まとめ
