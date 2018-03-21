@@ -26,7 +26,7 @@
 - 新卒2年目 ソフトウェアエンジニア
 - 1月から案件ドリブンで機械学習に従事(レコメンド) |
 - 大学時代、初頭レベルの線形代数、統計はギリギリ修めた。 |
-- [Twitter @ftnext](https://twitter.com/ftnext)、[はてなブログ](http://nikkie-ftnext.hatenablog.com/) |
+- <span>[Twitter @ftnext](https://twitter.com/ftnext)、[はてなブログ](http://nikkie-ftnext.hatenablog.com/)>/span> |
 
 +++
 
@@ -79,7 +79,7 @@
 
 - APIとして公開されている学習済みのAIを使う |
 - 例: Computer Vision API (Microsoft) |
-- 自記事で恐縮ですが...[Python入門者でもComputer Vision APIを叩くのは怖くない](https://qiita.com/ftnext/items/970069ff509f69812f23) |
+- <span>自記事で恐縮ですが...[Python入門者でもComputer Vision APIを叩くのは怖くない](https://qiita.com/ftnext/items/970069ff509f69812f23)</span> |
 
 +++
 
@@ -108,7 +108,7 @@
 ### 機械学習はGUIでも可能
 
 - 例: Azure Machine Learning Studio
-- ブラウザでアクセス: https://studio.azureml.net/ |
+- <span>ブラウザでアクセス: https://studio.azureml.net/</span> |
 - アルゴリズムは実装済み (知識がなくても動かせる) |
 - ドラッグ&ドロップで部品を配置するだけ (プログラミング言語を書かなくても動かせる) |
 
