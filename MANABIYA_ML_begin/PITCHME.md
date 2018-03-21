@@ -68,11 +68,9 @@
 
 +++
 
-### 「画像に何が写っているか知りたい」
+### 例: Computer Vision API
 
-- APIとして公開されている学習済みのAIを使う |
-- 例: Computer Vision API (Microsoft) |
-- <span>自記事で恐縮ですが...[Python入門者でもComputer Vision APIを叩くのは怖くない](https://qiita.com/ftnext/items/970069ff509f69812f23)</span> |
+![Computer Vision API イメージ](MANABIYA_ML_begin/assets/images/computer-vision-api-image.png)
 
 +++
 
