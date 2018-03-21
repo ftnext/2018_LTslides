@@ -95,12 +95,11 @@
 
 +++
 
-### 機械学習はGUIでも可能
+### Azure Machine Learning Studio
 
-- 例: Azure Machine Learning Studio
 - <span>ブラウザでアクセス: https://studio.azureml.net/</span> |
-- アルゴリズムは実装済み (知識がなくても動かせる) |
-- ドラッグ&ドロップで部品を配置するだけ (プログラミング言語を書かなくても動かせる) |
+- アルゴリズムは実装済み。数学の知識がなくても動かせる |
+- コーディング不要。GUIでドラッグ&ドロップ |
 
 +++
 
