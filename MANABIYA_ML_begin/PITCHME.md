@@ -58,11 +58,7 @@
 - APIとして公開されている学習済みのAIを使おう |
 - 一から機械学習に取り組まなくてもAさんのやりたいことは達成できる |
 
-+++
-
-例: Computer Vision API
-
-![Computer Vision API イメージ](MANABIYA_ML_begin/assets/images/computer-vision-api-image.png)
++++?image=MANABIYA_ML_begin/assets/images/computer-vision-api-image.png&size=contain
 
 +++
 
@@ -93,11 +89,7 @@
 - アルゴリズムは実装済み。数学の知識がなくても動かせる |
 - コーディング不要。GUIでドラッグ&ドロップ |
 
-+++
-
-### Azure ML Studio利用イメージ
-
-![Azure ML Studioでレコメンド](MANABIYA_ML_begin/assets/images/recommend_sample-7.png)
++++?image=MANABIYA_ML_begin/assets/images/recommend_sample-7.png&size=contain
 
 +++
 
@@ -132,11 +124,7 @@
   - kaggle: データ解析コンペのプラットフォーム |
   - kernel: 参加者が公開しているコンペでのデータ解析の事例 |
 
-+++
-
-### kaggleのkernel
-
-![kaggleのkernel](MANABIYA_ML_begin/assets/images/kaggle-kernel.png)
++++?image=MANABIYA_ML_begin/assets/images/kaggle-kernel.png&size=contain
 
 ---
 
