@@ -74,11 +74,7 @@
 
 +++
 
-### 学習済みのAIのカスタマイズも可能
 
-- Custom Vision Service (Microsoft)
-- Visual Recognition (IBM)
-- etc.
 
 ---
 
