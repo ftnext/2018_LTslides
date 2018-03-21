@@ -103,9 +103,9 @@
 
 +++
 
-### Azure ML Studio画面イメージ
+### Azure ML Studio利用イメージ
 
-TODO: 画面ショットを載せる
+![Azure ML Studioでレコメンド](MANABIYA_ML_begin/assets/images/recommend_sample-7.png)
 
 +++
 
