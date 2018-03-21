@@ -60,7 +60,7 @@
 
 +++
 
-### 例: Computer Vision API
+例: Computer Vision API
 
 ![Computer Vision API イメージ](MANABIYA_ML_begin/assets/images/computer-vision-api-image.png)
 
