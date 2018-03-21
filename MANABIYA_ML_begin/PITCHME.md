@@ -155,7 +155,7 @@
 
 ### kaggleのkernel
 
-![kaggleのkernelのイメージ](MANABIYA_ML_begin/assets/images/kaggle-kernel.png)
+![kaggleのkernel](MANABIYA_ML_begin/assets/images/kaggle-kernel.png)
 
 ---
 
