@@ -79,7 +79,7 @@
 
 - APIとして公開されている学習済みのAIを使う |
 - 例: Computer Vision API (Microsoft) |
-<span>- 自記事で恐縮ですが...[Python入門者でもComputer Vision APIを叩くのは怖くない](https://qiita.com/ftnext/items/970069ff509f69812f23)</span> |
+- <span>自記事で恐縮ですが...[Python入門者でもComputer Vision APIを叩くのは怖くない](https://qiita.com/ftnext/items/970069ff509f69812f23)</span> |
 
 +++
 
