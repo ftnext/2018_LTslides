@@ -26,7 +26,7 @@
 - 新卒2年目 ソフトウェアエンジニア
 - 1月から案件ドリブンで機械学習に従事(レコメンド) |
 - 大学時代、初頭レベルの線形代数、統計はギリギリ修めた。 |
-- <span>[Twitter @ftnext](https://twitter.com/ftnext)、[はてなブログ](http://nikkie-ftnext.hatenablog.com/)>/span> |
+- <span>[Twitter @ftnext](https://twitter.com/ftnext)、[はてなブログ](http://nikkie-ftnext.hatenablog.com/)</span> |
 
 +++
 
