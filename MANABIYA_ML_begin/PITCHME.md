@@ -58,7 +58,7 @@
 - APIとして公開されている学習済みのAIを使おう |
 - 一から機械学習に取り組まなくてもAさんのやりたいことは達成できる |
 
-+++?image=MANABIYA_ML_begin/assets/images/computer-vision-api-image.png
++++?image=MANABIYA_ML_begin/assets/images/computer-vision-api-image.png&size=contain
 
 +++
 
