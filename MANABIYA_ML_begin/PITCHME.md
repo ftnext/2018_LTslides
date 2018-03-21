@@ -17,7 +17,7 @@
 - ソフトウェアエンジニア(4月から3年目)
 - [Twitter @ftnext](https://twitter.com/ftnext)、[はてなブログ](http://nikkie-ftnext.hatenablog.com/)
 - 1月から案件ドリブンで機械学習に従事 |
-  - Azure ML(後述)でレコメンド |
+  - Azure ML Studio(後述)でレコメンド |
   - 「回帰」「分類」は知っているが、使ったことはなかった |
 
 +++
