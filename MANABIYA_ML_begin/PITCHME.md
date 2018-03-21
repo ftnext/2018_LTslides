@@ -89,7 +89,7 @@
 
 ### Azure Machine Learning Studio
 
-- <span>ブラウザでアクセス: https://studio.azureml.net/</span> |
+- <span>ブラウザでアクセス: https://studio.azureml.net/</span>
 - アルゴリズムは実装済み。数学の知識がなくても動かせる |
 - コーディング不要。GUIでドラッグ&ドロップ |
 
