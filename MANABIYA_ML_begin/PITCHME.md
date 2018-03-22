@@ -53,10 +53,10 @@
 
 ---
 
-### 画像に何が写っているか知りたいAさんへ
+### 画像に何が写っているか<br>知りたいAさんへ
 
 - APIとして公開されている学習済みのAIを使おう |
-- 一から機械学習に取り組まなくてもAさんのやりたいことは達成できる |
+- 一から機械学習に取り組まなくても<br>Aさんのやりたいことは達成できる |
 
 +++?image=MANABIYA_ML_begin/assets/images/computer-vision-api-image.png&size=contain
 
