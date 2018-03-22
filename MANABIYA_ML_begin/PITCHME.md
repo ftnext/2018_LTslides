@@ -142,6 +142,6 @@
 
 ### 画像URL
 
-- Computer Vision API イメージ: https://qiita.com/ftnext/items/970069ff509f69812f23
-- Azure ML Studioでレコメンド: https://raw.githubusercontent.com/ftnext/CogBot11-LT-201801/master/image/recommend_sample-7.png
-- kaggleのkernel: https://www.kaggle.com/c/titanic/kernels?sortBy=votes&group=everyone&pageSize=20&competitionId=3136
+- <span class="ref-char">Computer Vision API イメージ: https://qiita.com/ftnext/items/970069ff509f69812f23</span>
+- <span class="ref-char">Azure ML Studioでレコメンド: https://raw.githubusercontent.com/ftnext/CogBot11-LT-201801/master/image/recommend_sample-7.png</span>
+- <span class="ref-char">kaggleのkernel: https://www.kaggle.com/c/titanic/kernels?sortBy=votes&group=everyone&pageSize=20&competitionId=3136</span>
