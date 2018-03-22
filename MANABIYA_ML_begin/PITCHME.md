@@ -122,7 +122,7 @@
 
 - kaggleのkernelを見るのがよさそう |
   - kaggle: データ解析コンペのプラットフォーム |
-  - kernel: 参加者が公開しているコンペでのデータ解析の事例 |
+  - kernel: 参加者が公開している<br>コンペでのデータ解析の事例 |
 
 +++?image=MANABIYA_ML_begin/assets/images/kaggle-kernel.png&size=contain
 
