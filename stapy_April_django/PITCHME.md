@@ -50,10 +50,7 @@ https://speakerdeck.com/ftnext/pillow-mosaic-art-nyumon
     - └ static/
         - └ blog/
 
-+++
-
-<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">&lt;img&gt;タグのsrc属性の指定でだいぶハマった。<br>{% static &quot;{{モデル.プロパティ}}&quot; %}ってやるとDBに格納しているファイル名が展開されないが、<br>{{STATIC_PREFIX}}{{モデル.プロパティ}}って並べるとDBに格納しているファイル名が展開された。<a href="https://t.co/ti4kLDCZJQ">https://t.co/ti4kLDCZJQ</a><br>テンプレートに並べてみました。 <a href="https://t.co/9JLAVScVBx">pic.twitter.com/9JLAVScVBx</a></p>&mdash; nikkie (@ftnext) <a href="https://twitter.com/ftnext/status/976480577388883968?ref_src=twsrc%5Etfw">2018年3月21日</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
++++?image=https://pbs.twimg.com/media/DY0mx1kVwAE4k9J.jpg&size=contain
 
 ---
 
