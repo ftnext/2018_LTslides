@@ -22,11 +22,7 @@ https://speakerdeck.com/ftnext/pillow-mosaic-art-nyumon
 
 +++
 
-# モザイクアート on Django
-
-+++
-
-### Road to モザイクアート on Django
+### Road to "Djangoにモザイクアート"
 
 - 作成済みのモザイクアートを表示する
 - ボタンを押すとモザイクアートが作られて表示される
