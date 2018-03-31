@@ -61,8 +61,7 @@ https://speakerdeck.com/ftnext/pillow-mosaic-art-nyumon
 
 +++
 
-<blockquote class="twitter-video" data-lang="ja"><p lang="ja" dir="ltr">わーい、Djangoでモザイクアート作れるようになったーー！<br><br>やむをえずもろもろ決め打ちにしているので改善点しかないんですが、一つ一つ潰していきます。<br>現状は私のTwitterアイコンしかモザイク化できませんし、モザイクに使うパーツも決め打ちです。 <a href="https://t.co/bfi0SfjmoY">pic.twitter.com/bfi0SfjmoY</a></p>&mdash; nikkie (@ftnext) <a href="https://twitter.com/ftnext/status/977475056535138304?ref_src=twsrc%5Etfw">2018年3月24日</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+https://twitter.com/ftnext/status/977475056535138304
 
 ---
 
