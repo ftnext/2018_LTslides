@@ -1,4 +1,4 @@
-# Djangoにモザイクアート
+# Djangoに<br>モザイクアート
 #### みんなのPython勉強会#34 LT (2018/04/03)
 #### nikkie
 
@@ -6,7 +6,7 @@
 
 ### nikkie (@ftnext)
 
-- 3年目ソフトウェアエンジニア（サーバーサイド、機械学習）
+- 3年目ソフトウェアエンジニア<br>（サーバーサイド、機械学習）
 - [Twitter @ftnext](https://twitter.com/ftnext)、[はてなブログ](http://nikkie-ftnext.hatenablog.com/)
 - ほしいもの「Django Congress チケット」
 
@@ -22,7 +22,7 @@ https://speakerdeck.com/ftnext/pillow-mosaic-art-nyumon
 
 ### みんなのPython勉強会#33 (2018/03)
 
-## 「Pythonを学んだ人にWebもオススメしたい理由」@hirokiky
+## 「Pythonを学んだ人に<br>Webもオススメしたい理由」<br>@hirokiky
 
 +++
 
@@ -35,7 +35,7 @@ https://speakerdeck.com/ftnext/pillow-mosaic-art-nyumon
 
 ---
 
-### Step1: 作成済みのモザイクアートを表示する
+### Step1: 作成済みのモザイクアートを<br>表示する
 
 - Django Girls Tutorial
 - 画像ファイル=静的ファイルの扱い(staticフォルダ)
@@ -66,7 +66,7 @@ https://speakerdeck.com/ftnext/pillow-mosaic-art-nyumon
 
 - {% load static %}
 - {% get_static_prefix as STATIC_PREFIX %}
-- モザイクアートのパス指定: "{{ STATIC_PREFIX }}images/{{ mosaic_art.user }}/{{ mosaic_art.file_name }}"
+- モザイクアートのパス指定:<br>"{{ STATIC_PREFIX }}images/{{ mosaic_art.user }}/{{ mosaic_art.file_name }}"
 
 +++
 
@@ -94,7 +94,7 @@ https://speakerdeck.com/ftnext/pillow-mosaic-art-nyumon
 
 ---
 
-### Step2: ボタンを押すとモザイクアートが作られて表示される
+### Step2: ボタンを押すと<br>モザイクアートが作られて表示される
 
 - フォームのサブミットボタン
 - 設定値決め打ちでモザイクアートを作成
@@ -115,7 +115,7 @@ https://twitter.com/ftnext/status/977475056535138304
 
 ---
 
-### Step3: モザイクアートの設定値がいじれる
+### Step3: モザイクアートの設定値が<br>いじれる
 
 - モザイクアートにする画像を選べるようにした
 
@@ -125,7 +125,7 @@ https://twitter.com/ftnext/status/977475056535138304
 
 +++
 
-### モザイクアートのソースコードの技術的負債
+### モザイクアートのソースコードの<br>技術的負債
 
 - モザイクアートにする画像の指定がべた書き
 ```lang=python
@@ -144,7 +144,7 @@ mosaic_icon_im.save('product/my_icon_mosaic.png')
 
 - モザイクアートにする画像の選択プルダウンは実装できた
   - 現状は決め打ち。今後は動的にしたい。
-- 平均の色を使うか、中央値の色を使うか、一番使われている色を使うか選択できるようにする
+- 平均の色を使うか、中央値の色を使うか、<br>一番使われている色を使うか選択できるようにする
 
 ---
 
@@ -159,8 +159,8 @@ mosaic_icon_im.save('product/my_icon_mosaic.png')
 
 ### まとめ
 
-- Django Girls Tutorialの読み替えと必要な知識のつまみ食いで動くものは作れそう
 - Django Congress参加が難しくなった方は<br>チケット譲っていただけるとうれしいです。
+- Django Girls Tutorialの読み替えと<br>必要な知識のつまみ食いで動くものは作れそう
 - 確かに「Pythonを学んだ人にWebもオススメしたい」
 
 +++
