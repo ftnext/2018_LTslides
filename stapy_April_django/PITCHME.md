@@ -6,7 +6,9 @@
 
 ### nikkie (@ftnext)
 
-TODO: 自己紹介を入れる
+- 3年目ソフトウェアエンジニア（サーバーサイド、機械学習）
+- [Twitter @ftnext](https://twitter.com/ftnext)、[はてなブログ](http://nikkie-ftnext.hatenablog.com/)
+- ほしいもの「Django Congress チケット」
 
 +++
 
