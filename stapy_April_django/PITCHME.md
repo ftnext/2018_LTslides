@@ -42,7 +42,16 @@ https://speakerdeck.com/ftnext/pillow-mosaic-art-nyumon
 
 +++
 
-### staticフォルダ問題
+### Django Girls Tutorial
+
+- [プロジェクトを作成しよう](https://djangogirlsjapan.gitbooks.io/workshop_tutorialjp/django_start_project/)
+- [Djangoモデル](https://djangogirlsjapan.gitbooks.io/workshop_tutorialjp/django_models/)
+- [Django urls](https://djangogirlsjapan.gitbooks.io/workshop_tutorialjp/django_urls/)
+- [Djangoビュー](https://djangogirlsjapan.gitbooks.io/workshop_tutorialjp/django_views/)
+- [テンプレートに表示しよう](https://djangogirlsjapan.gitbooks.io/workshop_tutorialjp/django_templates/)
+- [CSSでカワイくしよう](https://djangogirlsjapan.gitbooks.io/workshop_tutorialjp/css/)
+
++++
 
 - manage.pyと同じ階層にstaticフォルダを配置する
   - Django Girls Tutorialで採用
