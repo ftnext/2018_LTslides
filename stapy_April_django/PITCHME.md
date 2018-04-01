@@ -16,6 +16,8 @@ https://speakerdeck.com/ftnext/pillow-mosaic-art-nyumon
 
 ![Pillowでモザイクアート](stapy_April_django/assets/20180116PyNyumonLT-slide1.png)
 
++++?image=stapy_April_django/assets/20180116PyNyumonLT-slide20.png&size=contain
+
 +++
 
 ### みんなのPython勉強会#33 (2018/03)
