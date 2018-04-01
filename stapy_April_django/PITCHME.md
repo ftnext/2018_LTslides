@@ -160,3 +160,11 @@ Run 'python manage.py migrate' to apply them.
 ```
 - 知識のつまみ食い状態なので、公式チュートリアル確認が必要そう
 - Django1系と2系の何が違うのか把握したい
+
++++
+
+### まとめ
+
+- Django Congress参加が難しくなった方はチケット譲ってください。
+- Django Girls Tutorialの読み替えと必要な知識のつまみ食いで動くものは作れそう
+- 確かに「Pythonを学んだ人にWebもオススメしたい」
