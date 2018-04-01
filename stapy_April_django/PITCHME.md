@@ -159,8 +159,8 @@ mosaic_icon_im.save('product/my_icon_mosaic.png')
 
 ### まとめ
 
-- Django Congress参加が難しくなった方はチケット譲ってください。
 - Django Girls Tutorialの読み替えと必要な知識のつまみ食いで動くものは作れそう
+- Django Congress参加が難しくなった方は<br>チケット譲っていただけるとうれしいです。
 - 確かに「Pythonを学んだ人にWebもオススメしたい」
 
 +++
