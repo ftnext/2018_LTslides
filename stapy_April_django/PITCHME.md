@@ -74,6 +74,18 @@ https://speakerdeck.com/ftnext/pillow-mosaic-art-nyumon
 ```
 
 +++
+
+### staticフォルダ配置
+
+- Django Girls Tutorial
+  - ├ mysite/  <- Project
+  - ├ gallery/ <- Application
+  - ├ static/  <- Mosaic arts (PNG file)
+  - └ manage.py
+- この配置ではmanage.pyの`BASE_DIR`の取得が参考になる
+
++++
+
 - アプリケーションフォルダの中に配置する
   - blog/
     - └ static/
