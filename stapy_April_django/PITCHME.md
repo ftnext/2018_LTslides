@@ -168,3 +168,11 @@ Run 'python manage.py migrate' to apply them.
 - Django Congress参加が難しくなった方はチケット譲ってください。
 - Django Girls Tutorialの読み替えと必要な知識のつまみ食いで動くものは作れそう
 - 確かに「Pythonを学んだ人にWebもオススメしたい」
+
++++
+
+### 資料類
+
+- [本スライド](https://gitpitch.com/ftnext/2018_LTslides/master?p=stapy_April_django)
+- [Djangoにモザイクアート リポジトリ](https://github.com/ftnext/mosaic-art-on-django)
+- [Pillowでモザイクアート リポジトリ](https://github.com/ftnext/mosaic-art-python)
