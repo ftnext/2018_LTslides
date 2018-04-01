@@ -128,3 +128,16 @@ https://twitter.com/ftnext/status/977475056535138304
 
 # Demo
 
++++
+
+### モザイクアートのソースコードの技術的負債
+
+- モザイクアートにする画像の指定がべた書き→引数にする
+```lang=python
+icon_im = Image.open('my_icon.png')
+```
+- 作成したモザイクアートのファイル名がべた書き→関数で重複しないファイル名にする
+```lang=python
+mosaic_icon_im.save('product/my_icon_mosaic.png')
+```
+
