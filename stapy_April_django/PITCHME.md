@@ -152,7 +152,7 @@ mosaic_icon_im.save('product/my_icon_mosaic.png')
 ### Djangoにモザイクアート 所感
 
 - 感想: Django賢い
-  - You have 13 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions. Run 'python manage.py migrate' to apply them.
+  - You have 13 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions. <span class="red-char">Run 'python manage.py migrate'</span> to apply them.
 - 知識のつまみ食い状態なので、公式チュートリアル確認が必要そう
 - Django1系と2系の何が違うのか把握したい
 
