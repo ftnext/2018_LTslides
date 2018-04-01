@@ -89,6 +89,7 @@ https://speakerdeck.com/ftnext/pillow-mosaic-art-nyumon
     - └ static/
       - └ gallery/
         - (Mosaic arts...)
+- 情報元: [Djangoを学ぶ(3):画像の表示 - 豆腐とコンソメ](http://www.tohuandkonsome.site/entry/2017/06/10/211145)
 
 +++?image=https://pbs.twimg.com/media/DY0mx1kVwAE4k9J.jpg&size=contain
 
