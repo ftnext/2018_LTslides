@@ -106,6 +106,8 @@ https://speakerdeck.com/ftnext/pillow-mosaic-art-nyumon
 
 +++
 
+### 動画でご覧ください
+
 https://twitter.com/ftnext/status/977475056535138304
 
 ---
