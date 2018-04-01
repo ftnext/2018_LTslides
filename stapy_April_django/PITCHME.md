@@ -148,3 +148,15 @@ mosaic_icon_im.save('product/my_icon_mosaic.png')
 - モザイクアートにする画像の選択プルダウンは実装できた
   - 現状は決め打ち。今後は動的にしたい。
 - 平均の色を使うか、中央値の色を使うか、一番使われている色を使うか選択できるようにする
+
+---
+
+### Djangoにモザイクアート 所感
+
+- 感想: Django賢い
+```
+You have 13 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+```
+- 知識のつまみ食い状態なので、公式チュートリアル確認が必要そう
+- Django1系と2系の何が違うのか把握したい
