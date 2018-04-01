@@ -12,11 +12,9 @@
 
 +++
 
-### Pillowでモザイクアート(2018/01)
-
 https://speakerdeck.com/ftnext/pillow-mosaic-art-nyumon
 
-+++?image=https://speakerdeck.com/player/c2f8d454de5c490f94ea26220eeef55a?slide=20#
+![Pillowでモザイクアート](stapy_April_django/assets/20180116PyNyumonLT-slide1.png)
 
 +++
 
