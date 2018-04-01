@@ -65,7 +65,7 @@ https://speakerdeck.com/ftnext/pillow-mosaic-art-nyumon
 ### モザイクアート表示
 
 - 静的ファイルとして表示
-```lang=html
+```lang=HTML
 {% load static %}
 {% get_static_prefix as STATIC_PREFIX %}
 
