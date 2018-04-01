@@ -53,8 +53,14 @@ https://speakerdeck.com/ftnext/pillow-mosaic-art-nyumon
 
 +++
 
-- manage.pyと同じ階層にstaticフォルダを配置する
-  - Django Girls Tutorialで採用
+### MosaicArtモデル
+
+- user: モザイクアートを作成したユーザ
+- file_name: モザイクアートのファイル名
+- original_image: モザイクアートにした元の画像
+- created_date: モザイクアート作成日時
+
++++
 - アプリケーションフォルダの中に配置する
   - blog/
     - └ static/
