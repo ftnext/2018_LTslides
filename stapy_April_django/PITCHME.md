@@ -31,7 +31,7 @@ https://speakerdeck.com/ftnext/pillow-mosaic-art-nyumon
 - 作成済みのモザイクアートを表示する
 - ボタンを押すとモザイクアートが作られて表示される
 - モザイクアートの設定値がいじれる
-- <span>注意: <span class="red-char>v1.11</span>で実装</span> |
+- <span>注意: <span class="red-char">v1.11</span>で実装</span> |
 
 ---
 
