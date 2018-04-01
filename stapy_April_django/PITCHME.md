@@ -65,7 +65,7 @@ https://speakerdeck.com/ftnext/pillow-mosaic-art-nyumon
 ### モザイクアート表示
 
 - {% load static %}
-- {% get_static_prefix as STATIC_PREFIX %}
+- {% <span class="red-char">get_static_prefix</span> as STATIC_PREFIX %}
 - モザイクアートのパス指定:<br>"{{ STATIC_PREFIX }}images/{{ mosaic_art.user }}/{{ mosaic_art.file_name }}"
 
 +++
