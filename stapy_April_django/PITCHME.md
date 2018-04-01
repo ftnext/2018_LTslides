@@ -86,10 +86,14 @@ https://speakerdeck.com/ftnext/pillow-mosaic-art-nyumon
 
 +++
 
+### staticフォルダ配置(2)
+
 - アプリケーションフォルダの中に配置する
-  - blog/
+  - ├ mysite/  <- Project
+  - ├ gallery/ <- Application
     - └ static/
-        - └ blog/
+      - └ gallery/
+        - (Mosaic arts...)
 
 +++?image=https://pbs.twimg.com/media/DY0mx1kVwAE4k9J.jpg&size=contain
 
