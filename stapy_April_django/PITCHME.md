@@ -35,10 +35,10 @@ https://speakerdeck.com/ftnext/pillow-mosaic-art-nyumon
 
 ---
 
-### 作成済みのモザイクアートを表示する
+### Step1: 作成済みのモザイクアートを表示する
 
 - Django Girls Tutorial
-- staticフォルダ
+- 画像ファイル=静的ファイルの扱い(staticフォルダ)
 
 +++
 
