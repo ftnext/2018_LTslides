@@ -110,6 +110,14 @@ https://speakerdeck.com/ftnext/pillow-mosaic-art-nyumon
 
 https://twitter.com/ftnext/status/977475056535138304
 
++++
+
+### actionのビューの動き
+
+- モザイクアート作成(設定値は決め打ち)
+- MosaicArtレコードをcreate
+- →作成したモザイクアートがテンプレートに埋め込まれる
+
 ---
 
 ### モザイクアートの設定値がいじれる
