@@ -22,7 +22,7 @@ https://speakerdeck.com/ftnext/pillow-mosaic-art-nyumon
 
 ### みんなのPython勉強会#33 (2018/03)
 
-# 「Pythonを学んだ人にWebもオススメしたい理由」@hirokiky
+## 「Pythonを学んだ人にWebもオススメしたい理由」@hirokiky
 
 +++
 
