@@ -61,6 +61,19 @@ https://speakerdeck.com/ftnext/pillow-mosaic-art-nyumon
 - created_date: モザイクアート作成日時
 
 +++
+
+### モザイクアート表示
+
+- 静的ファイルとして表示
+```lang=html
+{% load static %}
+{% get_static_prefix as STATIC_PREFIX %}
+
+<img src="{{ STATIC_PREFIX }}images/target/{{ mosaic_art.original_image }}">
+<img src="{{ STATIC_PREFIX }}images/{{ mosaic_art.user }}/{{ mosaic_art.file_name }}" width="400" height="400">
+```
+
++++
 - アプリケーションフォルダの中に配置する
   - blog/
     - └ static/
