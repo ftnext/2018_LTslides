@@ -176,3 +176,10 @@ Run 'python manage.py migrate' to apply them.
 - [本スライド](https://gitpitch.com/ftnext/2018_LTslides/master?p=stapy_April_django)
 - [Djangoにモザイクアート リポジトリ](https://github.com/ftnext/mosaic-art-on-django)
 - [Pillowでモザイクアート リポジトリ](https://github.com/ftnext/mosaic-art-python)
+
++++
+
+### ご清聴ありがとうございました
+
+- モザイクアートのライブデモできます。興味ある方お声がけください
+- LTへの質問やコメント大歓迎です。
