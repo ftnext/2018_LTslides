@@ -8,7 +8,7 @@
 
 ### stapy3周年おめでとうございます！
 
-:tada:
+<i class="em em-tada"></i>
 
 +++
 
