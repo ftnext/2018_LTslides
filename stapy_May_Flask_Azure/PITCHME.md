@@ -4,9 +4,7 @@
 
 ---
 
-### はじめに
-
-# stapy3周年<br>おめでとうございます！ @fa[birthday-cake]
+# stapy3周年<br>おめでとう<br>ございます！ @fa[birthday-cake]
 
 +++
 
