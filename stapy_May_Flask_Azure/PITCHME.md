@@ -8,7 +8,7 @@
 
 ### stapy3周年おめでとうございます！
 
-@fa[fa-birthday-cake]
+@fa[birthday-cake]
 
 +++
 
