@@ -62,7 +62,7 @@
 
 ハージョンを合わせなかったことでハマりました
 
-TODO: iframeを使う
+<iframe class="stretch" data-src="https://qiita.com/ftnext/items/e2120cfa0fcecbd599c1"></iframe>
 
 +++
 
