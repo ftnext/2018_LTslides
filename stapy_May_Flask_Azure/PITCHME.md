@@ -12,7 +12,7 @@
 
 - ソフトウェアエンジニア3年目
 - TwitterやQiita: @ftnext
-- Python Love :heart_eyes:
+- Python Love @fa[birthday-cake fa-pink]
 - Azure使うことが多い
 
 ---
