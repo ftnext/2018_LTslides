@@ -6,9 +6,7 @@
 
 ### はじめに
 
-### stapy3周年おめでとうございます！
-
-@fa[birthday-cake]
+# stapy3周年<br>おめでとうございます！ @fa[birthday-cake]
 
 +++
 
