@@ -43,6 +43,8 @@
 ### HOW TO DEPLOY
 
 チュートリアル、サンプルコードあります
+- チュートリアル: [Azure に Python Web アプリを作成する](https://docs.microsoft.com/ja-jp/azure/app-service/app-service-web-get-started-python)
+- サンプルコード: [Azure-Samples/python-docs-hello-world](https://github.com/Azure-Samples/python-docs-hello-world)
 
 +++
 
