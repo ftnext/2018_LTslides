@@ -62,7 +62,7 @@
 
 ハージョンを合わせなかったことでハマりました
 
-<iframe class="stretch" data-src="https://qiita.com/ftnext/items/e2120cfa0fcecbd599c1"></iframe>
+[Python3.6を境にjson.loads()の動きが変わっていたことで1週間ハマりました ToT](https://qiita.com/ftnext/items/e2120cfa0fcecbd599c1)
 
 +++
 
