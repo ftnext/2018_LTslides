@@ -23,6 +23,14 @@
 
 +++
 
+### WebAppsにデプロイは難しい
+
+- <span class="red-char">はじめに: WebAppsとFlaskとは?</span>
+- デプロイしてみた
+- デプロイして感じた課題
+
++++
+
 ### WebAppsとは
 
 - AzureのPaaS
@@ -41,6 +49,14 @@
 ![Flask Logo](http://flask.pocoo.org/docs/0.12/_images/logo-full.png)
 
 ---
+
+### WebAppsにデプロイは難しい
+
+- はじめに: WebAppsとFlaskとは?
+- <span class="red-char">デプロイしてみた</span>
+- デプロイして感じた課題
+
++++
 
 ### HOW TO DEPLOY
 
@@ -81,6 +97,14 @@
 ![500エラー](https://camo.qiitausercontent.com/575b8dfa1f54caf70921635e3aba0ad87d801a67/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f38323133322f39343166326435342d386166622d356238322d393031612d6434383862343466313263372e706e67)
 
 ---
+
+### WebAppsにデプロイは難しい
+
+- はじめに: WebAppsとFlaskとは?
+- デプロイしてみた
+- <span class="red-char">デプロイして感じた課題</span>
+
++++
 
 ### デプロイは壁が高い
 
