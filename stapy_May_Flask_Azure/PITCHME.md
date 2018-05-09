@@ -130,3 +130,5 @@ if __name__ == '__main__':
 ### ご清聴ありがとうございました
 
 ### 質問やコメントなど大歓迎です
+
+[Twitter @ftnext](https://twitter.com/ftnext)
