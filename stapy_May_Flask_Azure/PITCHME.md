@@ -38,6 +38,8 @@
   - Djangoと比べてシンプル。簡単なWebアプリ(API)をぱっと作るのに向いている
 - もちろんDjangoもWebAppsでデプロイできる
 
+![Flask Logo](http://flask.pocoo.org/docs/0.12/_images/logo-full.png)
+
 ---
 
 ### HOW TO DEPLOY
