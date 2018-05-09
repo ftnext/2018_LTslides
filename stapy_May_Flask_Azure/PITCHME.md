@@ -11,7 +11,7 @@
 ### 自己紹介 nikkie
 
 - ソフトウェアエンジニア3年目
-- TwitterやQiita: @ftnext
+- @ftnext [Twitter](https://twitter.com/ftnext), [Qiita](https://qiita.com/ftnext)
 - Python Love @fa[heart fa-pink]
 - Azure使うことが多い
 
