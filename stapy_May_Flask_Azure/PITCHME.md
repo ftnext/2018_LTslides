@@ -87,6 +87,22 @@
 
 +++
 
+### `main.py`(MSのサンプルコード)
+
+```python
+from flask import Flask
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+  return 'Hello, World!'
+
+if __name__ == '__main__':
+  app.run()
+```
+
++++
+
 ### 検証用サーバ
 
 - `python main.py`で動くサーバ (http://127.0.0.1/)
