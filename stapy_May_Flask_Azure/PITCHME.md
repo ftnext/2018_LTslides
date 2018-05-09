@@ -17,9 +17,9 @@
 
 ---
 
-### WebAppsにデプロイは難しい
+### LT: WebAppsにデプロイは難しい
 
-### Pythonで作ったWebアプリをWebAppsにデプロイする方法を話します
+## Pythonで作ったWebアプリを<br>WebAppsにデプロイする方法を話します
 
 +++
 
