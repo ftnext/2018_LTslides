@@ -71,8 +71,6 @@
 1. Pythonのバージョン
 1. ログ出力
 
-動作サンプル: [ftnext/python-docs-hello-world](https://github.com/ftnext/python-docs-hello-world)
-
 +++
 
 ### Pythonのバージョン
@@ -85,6 +83,8 @@
 ハージョンを合わせなかったことでハマりました
 
 [Python3.6を境にjson.loads()の動きが変わっていたことで1週間ハマりました ToT](https://qiita.com/ftnext/items/e2120cfa0fcecbd599c1)
+
+Python3.6の設定例: [ftnext/python-docs-hello-world](https://github.com/ftnext/python-docs-hello-world)
 
 +++
 
