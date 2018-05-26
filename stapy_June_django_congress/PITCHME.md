@@ -102,7 +102,7 @@
 
 ### Sprint: Translate django girls tutorial
 
-- [現在の日本語訳]()を参考に、[最新のtutorial]()を翻訳
+- [現在の日本語訳](https://djangogirlsjapan.gitbooks.io/workshop_tutorialjp/content/)を参考に、[最新のtutorial](https://tutorial.djangogirls.org/en/)を翻訳
 - はじめてPythonやDjangoに触る方に配慮しているという学びがあった
   - 例: メソッド(method)と関数(function)の違い
 - 始め方: https://twitter.com/mamix1116/status/998009349162254336
