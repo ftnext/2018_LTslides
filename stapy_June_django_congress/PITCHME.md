@@ -139,11 +139,11 @@
 - 入門者でもカンファレンスは楽しめる。
 - 入門者でもOSSに貢献できる。
 
++++?image=https://pbs.twimg.com/media/DdjKJjuVwAA11ce.jpg&size=contain
+
 +++
 
 ### Thank you, Speakers, Staffs, and Participants!
-
-![participants](https://pbs.twimg.com/media/DdjKJjuVwAA11ce.jpg)
 
 +++
 
