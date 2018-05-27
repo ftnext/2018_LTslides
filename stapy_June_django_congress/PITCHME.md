@@ -47,6 +47,14 @@
 
 ---
 
+### 入門者でもカンファレンスは楽しめる
+
+- <span class="red-char">Report</span>
+- Impression
+- Summary
+
++++
+
 ### DjangoCongress
 
 - Day-1 Conference Day
@@ -117,6 +125,14 @@
 
 ---
 
+### 入門者でもカンファレンスは楽しめる
+
+- Report
+- <span class="red-char">Impression</span>
+- Summary
+
++++
+
 ### Impression
 
 - カンファレンス楽しい！
@@ -140,6 +156,14 @@
   - 1年間力をつけて、来年は今とは別の形でコミットしたい
 
 ---
+
+### 入門者でもカンファレンスは楽しめる
+
+- Report
+- Impression
+- <span class="red-char">Summary</span>
+
++++
 
 ### Summary
 
