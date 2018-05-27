@@ -52,7 +52,7 @@
 - Day-1 Conference Day
   - May 19 (Sat) @ Cybozu, Inc.
   - 100 more participant
-- Day-2 Sptint Day
+- Day-2 Sprint Day
   - May 20 (Sun) @ BeProud, Inc.
   - 20 participant
 
@@ -93,7 +93,7 @@
 
 +++
 
-### Day-2 Sptint Day
+### Day-2 Sprint Day
 
 > Djangoのソースコードに貢献してみたいけど方法が分からない、Djangoのドキュメントを翻訳してみたい、 仲間と集まってDjangoやライブラリーの開発をしたいと思う人はぜひ参加してください。
 
