@@ -102,7 +102,7 @@
 
 +++
 
-### Sprint: Translate django girls tutorial
+### Sprint: Translate Django Girls Tutorial
 
 - [現在の日本語訳](https://djangogirlsjapan.gitbooks.io/workshop_tutorialjp/content/)を参考に、[最新のtutorial](https://tutorial.djangogirls.org/en/)を翻訳
 - はじめてPythonやDjangoに触る方に配慮しているという学びがあった
