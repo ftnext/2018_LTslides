@@ -108,6 +108,7 @@
 - はじめてPythonやDjangoに触る方に配慮しているという学びがあった
   - 例: メソッド(method)と関数(function)の違い
 - 始め方: https://twitter.com/mamix1116/status/998009349162254336
+![Django Girls Tutorial image](https://djangogirlsjapan.gitbooks.io/workshop_tutorialjp/content/images/application.png)
 
 ---
 
