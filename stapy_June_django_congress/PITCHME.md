@@ -34,7 +34,7 @@
 - Software Engineer (3rd year)
   - Python: half year
   - 2018/04~ FlaskでAPI開発
-- [django girls tutorial](https://legacy.gitbook.com/book/djangogirlsjapan/workshop_tutorialjp/details)修了レベル
+- [Django Girls Tutorial](https://djangogirlsjapan.gitbooks.io/workshop_tutorialjp/content/)修了レベル
 
 +++
 
