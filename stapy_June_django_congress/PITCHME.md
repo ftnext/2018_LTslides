@@ -23,7 +23,7 @@
 
 ### Django
 
-- Web Framework
+- Python製 Web Framework
 - フルスタック
 - Model - View - Template
 
