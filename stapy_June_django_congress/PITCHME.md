@@ -104,11 +104,16 @@
 
 ### Sprint: Translate Django Girls Tutorial
 
-- [現在の日本語訳](https://djangogirlsjapan.gitbooks.io/workshop_tutorialjp/content/)を参考に、[最新のtutorial](https://tutorial.djangogirls.org/en/)を翻訳
-- はじめてPythonやDjangoに触る方に配慮しているという学びがあった
-  - 例: メソッド(method)と関数(function)の違い
-- 始め方: https://twitter.com/mamix1116/status/998009349162254336
 ![Django Girls Tutorial image](https://djangogirlsjapan.gitbooks.io/workshop_tutorialjp/content/images/application.png)
+
++++
+
+### Translate Django Girls Tutorial
+
+- [最新のTutorial](https://tutorial.djangogirls.org/en/)を日本語に翻訳
+  - [現在の日本語訳](https://djangogirlsjapan.gitbooks.io/workshop_tutorialjp/content/)を参考にする
+  - 英語 -> 日本語 -> すっと理解できる日本語 にしている！
+- ここから始めよう。 https://twitter.com/mamix1116/status/998009349162254336
 
 ---
 
