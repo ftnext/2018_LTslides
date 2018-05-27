@@ -8,6 +8,8 @@
 
 ### Report about [DjangoCongress](https://djangocongress.jp/)
 
+![DjangoCongress logo](https://djangocongress.jp/assets/img/djangocongress_logo.png)
+
 +++
 
 ### [DjangoCongress](https://djangocongress.jp/)
