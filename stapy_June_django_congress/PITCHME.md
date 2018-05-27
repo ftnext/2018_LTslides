@@ -153,6 +153,7 @@
 
 - @NaoY_py さん
 - @akucchan_world さん
+- #rettypy (LT事前練習)
 
 +++
 
