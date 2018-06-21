@@ -72,7 +72,16 @@ if __name__ == '__main__':
 
 ### 知ったこと1: ログの出し方
 
-TODO: 埋める
+- `app.logger` (`app = Flask(__name__)`)
+- 実態は標準モジュール`logging`
+
++++
+
+### logging
+
+- ログ書き込み先やログのフォーマットの指定が必要
+  - 使い出しの設定が必要で`print`から切り替えるのに戸惑った
+- 公式チュートリアル: [Logging HOWTO](https://docs.python.jp/3/howto/logging.html)
 
 ---
 
@@ -117,7 +126,7 @@ db = SQLAlchemy(app)
 
 ### まとめ
 
-- TODO: ログの出し方
+- ログの使い方は[Logging HOWTO](https://docs.python.jp/3/howto/logging.html)で押さえる
 - DBを扱うときはimportを散らす
 
 +++
