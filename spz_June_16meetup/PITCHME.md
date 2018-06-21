@@ -14,8 +14,8 @@
 
 ### Too Long; Didn't Listen
 
-- flaskについて学んだことを話します
-- flaskとはPythonのWebフレームワーク
+- Flaskについて学んだことを話します
+- FlaskとはPythonのWebフレームワーク
 
 +++
 
@@ -44,15 +44,15 @@ https://speakerdeck.com/ftnext/pillow-mosaic-art-nyumon
 
 ---
 
-### What's flask
+### What's Flask
 
-![flask logo](http://flask.pocoo.org/docs/1.0/_images/logo-full.png)
+![Flask logo](http://flask.pocoo.org/docs/1.0/_images/logo-full.png)
 
 +++?image=https://img.supporterzcolab.com/thumbs/93/6e/936e380d5aeb12a08a1a91058cb9aac7.png&size=contain
 
 +++
 
-### What's flask
+### What's Flask
 
 - シンプルでとっつきやすいWebフレームワーク
 
