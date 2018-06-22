@@ -25,6 +25,7 @@
   - Python: half year
   - 2018/12~ 趣味で始めた
   - 2018/04~ FlaskでAPI開発
+- [はてなブログ](http://nikkie-ftnext.hatenablog.com/)、[Qiita](https://qiita.com/ftnext)
 
 +++
 
@@ -109,7 +110,7 @@ from app import models
 
 +++
 
-### 以下では、循環importが発生
+### 以下では、デプロイ先で循環importが発生
 
 ```python
 from flask import Flask
