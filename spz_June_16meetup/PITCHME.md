@@ -45,6 +45,14 @@ https://speakerdeck.com/ftnext/pillow-mosaic-art-nyumon
 
 ---
 
+### FlaskをAzureにデプロイして知った2つのこと
+
+- <span class="red-char">What's Flask</span>
+- 知ったこと1
+- 知ったこと2
+
++++
+
 ### What's Flask
 
 ![Flask logo](http://flask.pocoo.org/docs/1.0/_images/logo-full.png)
@@ -71,6 +79,14 @@ if __name__ == '__main__':
 
 ---
 
+### FlaskをAzureにデプロイして知った2つのこと
+
+- What's Flask
+- <span class="red-char">知ったこと1</span>
+- 知ったこと2
+
++++
+
 ### 知ったこと1: ログの出し方
 
 - `app.logger` (`app = Flask(__name__)`)
@@ -85,6 +101,14 @@ if __name__ == '__main__':
 - 公式チュートリアル: [Logging HOWTO](https://docs.python.jp/3/howto/logging.html)
 
 ---
+
+### FlaskをAzureにデプロイして知った2つのこと
+
+- What's Flask
+- 知ったこと1
+- <span class="red-char">知ったこと2</span>
+
++++
 
 ### 知ったこと2: DBの扱い(importを散らす)
 
