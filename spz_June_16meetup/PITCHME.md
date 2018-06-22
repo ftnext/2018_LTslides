@@ -1,4 +1,4 @@
-# TODO: タイトルを決める
+# FlaskをAzureにデプロイして知った2つのこと
 #### 16卒エンジニア限定ミートアップ LT (2018/06/22)
 #### nikkie
 
@@ -14,7 +14,7 @@
 
 ### Too Long; Didn't Listen
 
-- Flaskについて学んだことを話します
+- Flaskをデプロイして知ったことを話します
 - FlaskとはPythonのWebフレームワーク
 
 +++
