@@ -48,31 +48,15 @@
 - コーリーさんは独学でゼロからプログラミングを学んだ
 - 自分の苦労をもとに体系化して共有したい
 - 自分が仕事をしているときに困ったことをまとめ、次の人が困らないように
+
++++
+
+### 感想: 独学プログラマー × コミュニティ 最強説
+
 - コーリーさんの独学：ブログ、本、コースを駆使
-
-+++
-
-### 感想: コーリーさんの独学はstapyで学んだ独学戦略と重なる
-
-独学のTIPS
-
-- <span class="red-char">Textbook</span>
-- <span class="red-char">Internet</span>
-- People
-
-[モダンな独学の道。そうだ、オープンソースでいこう！ 201805 阿久津さん](https://www.slideshare.net/TakeshiAkutsu/ss-96624467)
-
-+++
-
-### 感想: コーリーさんの姿勢もstapyで学んだ独学戦略と重なる
-
-モダンな独学
-
-- <span class="red-char">Open Source</span>
-- Open Mind
-- Open Resource
-
-[モダンな独学の道。そうだ、オープンソースでいこう！ 201805 阿久津さん](https://www.slideshare.net/TakeshiAkutsu/ss-96624467)
+- 独学のTIPs (stapy 阿久津さん)
+  - Textbook／Internet／<span class="red-char">People</span>
+  - [モダンな独学の道。そうだ、オープンソースでいこう！ 201805 阿久津さん](https://www.slideshare.net/TakeshiAkutsu/ss-96624467)
 
 ---
 
