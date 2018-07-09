@@ -11,7 +11,7 @@
   - 2018/04~06 FlaskでAPI開発
 - [はてなブログ](http://nikkie-ftnext.hatenablog.com/)、[Qiita](https://qiita.com/ftnext)
 
-+++?image=https://cdnshop.nikkeibp.co.jp/0000/catalog/C92270/C92270_common_pc.jpg?size=contain
++++?image=https://images-na.ssl-images-amazon.com/images/I/51%2BScGc8DAL._SX351_BO1,204,203,200_.jpg?size=contain
 
 +++
 
