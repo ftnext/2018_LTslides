@@ -10,7 +10,11 @@
   - 2018/04~06 FlaskでAPI開発
 - [はてなブログ](http://nikkie-ftnext.hatenablog.com/)、[Qiita](https://qiita.com/ftnext)
 
-+++?image=https://images-na.ssl-images-amazon.com/images/I/51%2BScGc8DAL._SX351_BO1,204,203,200_.jpg?size=contain
++++
+
+訳者清水川さん: [『独学プログラマー』 The Self-Taught Programmer の紹介](http://www.freia.jp/taka/blog/the-self-taught-programmer-intro/index.html)
+
+![独学プログラマー表紙](http://www.freia.jp/taka/_images/the-self-taught-programmer-cover.png)
 
 +++
 
