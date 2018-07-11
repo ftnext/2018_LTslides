@@ -127,6 +127,13 @@
 - 独学で成功する秘訣は興味を持ったことをプログラミングで達成していくこと
 - 自分の力だけでできる／人に教えられる「中級者の分野」を作っていこう（by nikkie）
 
++++
+
+- イベントの詳細はブログにあります
+  - [イベントレポート | 独学プログラマーとして成功するには、何が必要か？ #独学プログラマー #独プロ](http://nikkie-ftnext.hatenablog.com/entry/2018/07/10/225055)
+- 独学プログラマー読書会とかもくもく会とかなにかやれないですかねーー
+  - https://twitter.com/ftnext/status/1006903515573248000
+
 +++?image=stapy_July_self_taught/assets/self-taught-sign.jpg?size=contain
 
 +++

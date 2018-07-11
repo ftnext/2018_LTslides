@@ -2,6 +2,7 @@
 GitPitchで作成したスライドの公開用リポジトリです。
 
 # スライド一覧
+- [独学プログラマー著者イベントから共有したい3つのこと](https://gitpitch.com/ftnext/2018_LTSlides/master?p=stapy_July_self_taught) @[みんなのPython勉強会#37 (2018/07)](https://startpython.connpass.com/event/81625/)
 - [FlaskをAzureにデプロイして知った2つのこと](https://gitpitch.com/ftnext/2018_LTSlides/master?p=spz_June_16meetup)
 - [入門者でもカンファレンスは楽しめる](https://gitpitch.com/ftnext/2018_LTSlides/master?p=stapy_June_django_congress) @[みんなのPython勉強会#36 (2018/06)](https://startpython.connpass.com/event/81624/)
 - [WebAppsにデプロイは難しい](https://gitpitch.com/ftnext/2018_LTSlides/master?p=stapy_May_Flask_Azure) @[みんなのPython勉強会#35 (2018/05)](https://startpython.connpass.com/event/81622/)
