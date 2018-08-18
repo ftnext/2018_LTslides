@@ -32,7 +32,7 @@
 ![ソフトウェア開発イメージ](aniben_August_imas/assets/system_integration.png)
 ### それは、決めること
 
-+++
++++?image=aniben_August_imas/assets/character_program.png&position=left&size=33% 33%
 
 ### 決める
 
@@ -41,10 +41,6 @@
 - 構成(IaaS or PaaS)
 
 注: 自分で決めてから<br>上長に相談するという<br>環境だった
-
-@snap[east]
-![プログラム](aniben_August_imas/assets/character_program.png)
-@snapend
 
 +++?image=aniben_August_imas/assets/kaisya_komaru_man.png&position=bottom&size=33% 33%&opacity=20
 
