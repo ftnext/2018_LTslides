@@ -24,8 +24,8 @@
 「アニメから得た **仕事** に関する学び」
 
 <div>
-  <img src="aniben_August_imas/assets/kaisya_man.png">
-  <img src="aniben_August_imas/assets/tv_boy_tooku.png">
+  <img src="assets/kaisya_man.png">
+  <img src="assets/tv_boy_tooku.png">
 </div>
 
 +++
