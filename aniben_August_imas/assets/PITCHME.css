@@ -13,6 +13,12 @@
   box-shadow: none;
 }
 
+.reveal blockquote {
+  width: 80%; /* デフォルトの70%を上書き */
+  background: #c0c0c0;
+  box-shadow: inset 0 1px 0 #fff; /* エンボス加工 */
+}
+
 .red-char {
   color: #ff0000;
 }
