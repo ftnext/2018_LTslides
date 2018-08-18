@@ -50,7 +50,7 @@
 
 @snap[east]
 
-![](assets/images/assets/character_program.png)
+![](aniben_August_imas/assets/character_program.png)
 
 @snapend
 
