@@ -46,7 +46,7 @@
 ![プログラム](aniben_August_imas/assets/character_program.png)
 @snapend
 
-+++?image=aniben_August_imas/assets/kaisya_komaru_man.png&position=bottom&size=75% 100%&opacity=20
++++?image=aniben_August_imas/assets/kaisya_komaru_man.png&position=bottom&size=33% 33%&opacity=20
 
 ### 決めることには不安がつきまとう
 
