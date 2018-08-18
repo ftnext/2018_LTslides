@@ -1,5 +1,5 @@
 # カスタムCSSファイル
-theme-override : common_assets/css/PITCHME.css
+theme-override : aniben_August_imas/PITCHME.css
 
 #スライドのページ数表示の設定
 slide-number : true
