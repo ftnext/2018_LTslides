@@ -33,9 +33,10 @@
 ### それは、決めること
 
 +++
+@transition[none]
 
 @snap[north]
-<h3>決める</h4>
+<h3>決める</h3>
 @snapend
 
 @snap[west]
