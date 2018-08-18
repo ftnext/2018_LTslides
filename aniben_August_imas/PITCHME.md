@@ -32,6 +32,32 @@
 ![ソフトウェア開発イメージ](aniben_August_imas/assets/system_integration.png)
 ### それは、決めること
 
++++
+
+@snap[north]
+<h3>決める</h4>
+@snapend
+
+@snap[west]
+
+@ul
+- 設計(仕様の細部)
+- プログラム(命名、メソッド)
+- 構成(IaaS or PaaS)
+@ulend
+
+@snapend
+
+@snap[east]
+
+![](assets/images/assets/character_program.png)
+
+@snapend
+
+@snap[south]
+注: 自分で決めてから上長に相談するという環境だった
+@snapend
+
 +++?image=aniben_August_imas/assets/character_program.png&position=right&size=33% 33%
 
 ### 決める
