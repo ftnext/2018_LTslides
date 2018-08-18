@@ -32,7 +32,7 @@
 ![ソフトウェア開発イメージ](aniben_August_imas/assets/system_integration.png)
 ### それは、決めること
 
-+++?image=aniben_August_imas/assets/character_program.png&position=left&size=33% 33%
++++?image=aniben_August_imas/assets/character_program.png&position=right&size=33% 33%
 
 ### 決める
 
