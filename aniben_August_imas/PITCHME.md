@@ -14,8 +14,8 @@
 
 ### Important!!
 
-- Love Anime
-- 今期推し: ハッピーシュガーライフ
+- Love Anime @color[#eba3ff](@fa[heart]@fa[heart])
+- 今期推し: <span class="serif-font">[ハッピーシュガーライフ](http://happysugarlife.tv)</span>
 
 ---
 
