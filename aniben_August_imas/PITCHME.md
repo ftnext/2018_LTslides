@@ -59,13 +59,26 @@
 注: 自分で決めてから上長に相談するという環境だった
 @snapend
 
-+++?image=aniben_August_imas/assets/kaisya_komaru_man.png&position=bottom&size=33% 33%&opacity=20
++++
+@transition[none]
 
-### 決めることには不安がつきまとう
+@snap[north]
+<h3>決めることには不安がつきまとう</h3>
+@snapend
 
-- この設計で適切？(デザインパターン全然知らない)
+@snap[west]
+
+@ul
+- この設計で適切？<br>(デザインパターン全然知らない)
 - プログラムがなんか読みづらい。。
-- クラウドリソース何使えばいい？(全てのリソースは知らない)
+- クラウドリソース何使えばいい？<br>(全てのリソースは知らない)
+@ulend
+
+@snapend
+
+@snap[east]
+![](aniben_August_imas/assets/kaisya_komaru_man.png)
+@snapend
 
 +++
 
