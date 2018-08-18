@@ -8,7 +8,7 @@
 
 - Alias @ftnext: [Twitter](https://twitter.com/ftnext), [Qiita](https://qiita.com/ftnext), [はてなブログ](http://nikkie-ftnext.hatenablog.com/)
 - Software Engineer (3rd year)
-- Love Python @color[#eba3ff](@fa[heart]) (Recently Rails @color[#ff0000](@fa[gem]))
+- Love Python @color[#eba3ff](@fa[heart]) (Recently Rails @color[#ff0000](@fa[diamond]))
 
 +++
 
