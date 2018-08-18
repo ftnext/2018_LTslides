@@ -34,15 +34,13 @@
 
 +++
 
-@snap[west]
 ### 決める
 
 - 設計(仕様の細部)
-- プログラム(命名、メソッド)
+- プログラム<br>(命名、メソッド)
 - 構成(IaaS or PaaS)
 
-注: 自分で決めてから上長に相談するという環境だった
-@snapend
+注: 自分で決めてから<br>上長に相談するという<br>環境だった
 
 @snap[east]
 ![プログラム](aniben_August_imas/assets/character_program.png)
