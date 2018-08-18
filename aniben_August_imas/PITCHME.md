@@ -135,3 +135,15 @@
 ### ご清聴ありがとうございました。
 感想・コメント大歓迎です！  
 Contact: [Twitter @ftnext](https://twitter.com/ftnext)
+
+---
+
+### Appendix
+
+- TV版、劇場版のストーリー
+  - [Wikipedia: THE IDOLM@STER (アニメ)](https://ja.wikipedia.org/wiki/THE_IDOLM@STER_(アニメ))
+- [YouTube: 劇場版本予告](https://www.youtube.com/watch?v=_YD0jTHxLlo)
+- カラーコードの参考
+  - [アイドルマスターミリオンライブ！アイドルイメージカラーまとめ](http://imas-million.zukan-jp.com/idol_imagecolor/)
+- 楽曲一覧
+  - [THE IDOLM@STER 関連楽曲の一覧(カテゴリ別)](https://imas-db.jp/song/detail/)
