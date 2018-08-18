@@ -23,6 +23,11 @@
 
 「アニメから得た **仕事** に関する学び」
 
+<div>
+  <img src="aniben_August_imas/assets/kaisya_man.png">
+  <img src="aniben_August_imas/assets/tv_boy_tooku.png">
+</div>
+
 +++
 
 ### ソフトウェア開発の仕事
