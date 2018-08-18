@@ -29,6 +29,7 @@
 +++
 
 ### ソフトウェア開発の仕事
+![ソフトウェア開発イメージ](aniben_August_imas/assets/system_integration.png)
 ### それは、決めること
 
 +++
