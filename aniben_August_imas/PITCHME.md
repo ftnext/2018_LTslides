@@ -59,16 +59,6 @@
 注: 自分で決めてから上長に相談するという環境だった
 @snapend
 
-+++?image=aniben_August_imas/assets/character_program.png&position=right&size=33% 33%
-
-### 決める
-
-- 設計(仕様の細部)
-- プログラム<br>(命名、メソッド)
-- 構成(IaaS or PaaS)
-
-注: 自分で決めてから<br>上長に相談するという<br>環境だった
-
 +++?image=aniben_August_imas/assets/kaisya_komaru_man.png&position=bottom&size=33% 33%&opacity=20
 
 ### 決めることには不安がつきまとう
