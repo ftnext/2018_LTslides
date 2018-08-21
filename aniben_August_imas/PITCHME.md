@@ -1,4 +1,4 @@
-# 何かを決めるということ
+# 何かを<span class="haruka">決</span>めるということ
 #### あにべん！ LT (2018/08/23)
 #### nikkie
 
@@ -7,7 +7,7 @@
 ### About nikkie
 
 - Alias @ftnext: [Twitter](https://twitter.com/ftnext), [Qiita](https://qiita.com/ftnext), [はてなブログ](http://nikkie-ftnext.hatenablog.com/)
-- Software Engineer (3rd year)
+- Software Engineer (3rd year), Web Application
 - Love Python @color[#eba3ff](@fa[heart]) (Recently Rails @color[#ff0000](@fa[diamond]))
 
 +++
@@ -103,6 +103,7 @@
 ### THE IDOLM@STER MOVIE
 ### 輝きの向こう側へ！
 ### 2014年
+### by <span class="haruka">天海春香</span>
 
 +++
 
@@ -119,17 +120,19 @@
 
 - アリーナライブを控える
 - バックダンサー(スクール生)に問題発生
-  - <span class="kana">可奈</span>: ダンサー脱落
-  - 他のダンサー: ダンスの難易度を維持するか下げるかで紛糾
+  - 一部のダンサーは難しいダンスについていけない
+  - ダンサーの一人<span class="kana">可奈</span>が挫折し離脱
+  - ダンスの難易度を維持するか下げるかで紛糾
 - リーダーを任された<span class="haruka">春香</span>は決めないといけない
 
 +++
 
 ### <span class="haruka">春香</span>の答え
 
-- <span class="kana">可奈</span>を待つ。難易度は維持
+- <span class="kana">可奈</span>を待つ
 - みんなで楽しく歌うというのが根本にある<span class="haruka">春香</span>だから、たどり着いた結論
   - TV版23-24話「<span class="haruka">アイドルになって、それで、みーんなで楽しくお歌を歌うの！</span>」
+- チームはダンスの難易度は維持することでまとまった
 
 ---
 
@@ -174,6 +177,7 @@ Thanks: [いらすとや](https://www.irasutoya.com)
 - TV版、劇場版のストーリー
   - [Wikipedia: THE IDOLM@STER (アニメ)](https://bit.ly/2L3a3jm)
 - [YouTube: 劇場版本予告](https://www.youtube.com/watch?v=_YD0jTHxLlo)
+  - 「私は天海春香だから」聞けます
 - カラーコードの参考
   - [アイドルマスターミリオンライブ！アイドルイメージカラーまとめ](http://imas-million.zukan-jp.com/idol_imagecolor/)
 - 楽曲一覧
