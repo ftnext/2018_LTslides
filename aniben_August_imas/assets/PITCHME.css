@@ -1,0 +1,28 @@
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  text-transform: none;
+  word-wrap: break-word;
+}
+
+.reveal section img {
+  border: 0;
+  box-shadow: none;
+}
+
+.reveal blockquote {
+  width: 80%; /* デフォルトの70%を上書き */
+  background: #eee;
+  box-shadow: 0 0 8px #333;
+}
+
+.haruka {
+  color: #e22b30;
+}
+
+.kana {
+  color: #f5ad3b;
+}
