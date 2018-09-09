@@ -24,3 +24,7 @@
 .fa-pink {
   color : #eba3ff;
 }
+
+.later-explained {
+  visibility: hidden;
+}

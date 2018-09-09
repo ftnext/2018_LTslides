@@ -69,6 +69,13 @@
 ### イメージとは？
 
 - 動作可能なアプリケーション
+	- <span class="later-explained">ソースコード+実行環境（ただし動作はしていない）</span>
+	- <span class="later-explained">Dockerfile(テキストファイル)から`build`される</span>
+		- <span class="later-explained">Dockerfileにはイメージの作成手順を書く</span>
+- イメージを持ち運ぶ
+	- <span class="later-explained">クラウド上のリポジトリにアップロードして、イメージを共有（配布）できる</span>
+	- <span class="later-explained">例: 開発環境(Docker使用)で`build`したイメージをDocker Hub(リポジトリ)にアップロード</span>
+- 動作可能なアプリケーション
 	- ソースコード+実行環境（ただし動作はしていない）
 	- Dockerfile(テキストファイル)から`build`される
 		- Dockerfileにはイメージの作成手順を書く
