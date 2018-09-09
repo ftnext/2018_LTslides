@@ -92,12 +92,12 @@
 ### Dockerを使って機械学習のモデルをAPIとして公開するには
 
 1. アプリケーションを用意
-		1. 機械学習のモデルを用意
-		1. 機械学習のモデルをAPIに組み込む
+	1. 機械学習のモデルを用意
+	1. 機械学習のモデルをAPIに組み込む
 1. Dockerfileを書いてイメージ作成
 1. イメージをリポジトリ(Docker Hub)にアップロード
 1. デプロイ先でイメージを取得し、実行(`run`)する
-		- GCPのVM(Ubuntu 16.04)で実行
+	- GCPのVM(Ubuntu 16.04)で実行
 
 ---
 
@@ -197,11 +197,11 @@ accuracy_score(y_test, y_pred)
 ### APIの処理
 
 1. 花びらの長さと幅のJSONがPOSTされる
-		- `{ "length": 5.1, "width": 2.4 }`
+	- `{ "length": 5.1, "width": 2.4 }`
 1. 分類器に渡す前に標準化する
 1. 分類器で分類する
 1. 分類結果をJSONで返す
-		- `{ "prediction": "virginica" }`
+	- `{ "prediction": "virginica" }`
 
 +++
 
@@ -297,7 +297,7 @@ CMD ["app:app"]
 
 1. イメージ作成: `docker build -t <イメージ名:バージョン> .`
 1. リポジトリにアップロード
-		- `docker login` && `docker push <イメージ名:バージョン>`
+	- `docker login` && `docker push <イメージ名:バージョン>`
 - 開発環境でイメージの動作確認
 	- `docker run -i -t --rm -p 5000:5000 <イメージ名:バージョン>`
 
@@ -360,12 +360,12 @@ TODO: 画像を入れる
 - Dockerは、アプリケーションが動作する状態で持ち運ぶことを実現したプラットフォーム
 	- イメージ: 動作可能なアプリケーション（＝ソースコード+実行環境）
 	- コンテナ: 動作させたイメージ（＝動作するアプリケーション）
-- Dockerを触ってみようと思っていただけたら幸いです
 
 +++
 
-## Happy Docker Life!
 ### ご清聴ありがとうございました。
+Dockerを触ってみようと思っていただけたら幸いです
+## Happy Docker Life!
 Contact: [Twitter @ftnext](https://twitter.com/ftnext)
 
 ---
@@ -407,9 +407,9 @@ Dockerコンテナは仮想マシンとして振る舞うように見える
 ### Dockerのメリット
 
 1. デプロイの省力化
-    - Flaskアプリケーションをデプロイして説明します
+  - Flaskアプリケーションをデプロイして説明します
 1. 環境構築の省力化
-    - Appendix: 機械学習環境の構築
+  - Appendix: 機械学習環境の構築
 
 +++
 
