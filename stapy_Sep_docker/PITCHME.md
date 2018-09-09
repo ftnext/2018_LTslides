@@ -75,6 +75,23 @@
 - イメージを持ち運ぶ
 	- <span class="later-explained">クラウド上のリポジトリにアップロードして、イメージを共有（配布）できる</span>
 	- <span class="later-explained">例: 開発環境(Docker使用)で`build`したイメージをDocker Hub(リポジトリ)にアップロード</span>
+
++++
+
+### イメージとは？
+
+- 動作可能なアプリケーション
+	- ソースコード+実行環境（ただし動作はしていない）
+	- Dockerfile(テキストファイル)から`build`される
+		- Dockerfileにはイメージの作成手順を書く
+- イメージを持ち運ぶ
+	- <span class="later-explained">クラウド上のリポジトリにアップロードして、イメージを共有（配布）できる</span>
+	- <span class="later-explained">例: 開発環境(Docker使用)で`build`したイメージをDocker Hub(リポジトリ)にアップロード</span>
+
++++
+
+### イメージとは？
+
 - 動作可能なアプリケーション
 	- ソースコード+実行環境（ただし動作はしていない）
 	- Dockerfile(テキストファイル)から`build`される
@@ -82,6 +99,16 @@
 - イメージを持ち運ぶ
 	- クラウド上のリポジトリにアップロードして、イメージを共有（配布）できる
 	- 例: 開発環境(Docker使用)で`build`したイメージをDocker Hub(リポジトリ)にアップロード
+
++++
+
+### コンテナとは？
+
+- 動作させたイメージ（＝動作するアプリケーション）
+	- イメージを`run`するとコンテナが起動する
+- <span class="later-explained">仮想マシンのようにも見える</span>
+	- <span class="later-explained">イメージを`run`する際に、ホストマシンと仮想マシンの間の設定をする</span>
+	- <span class="later-explained">例: ポート、ディレクトリの共有設定</span>
 
 +++
 
