@@ -216,10 +216,10 @@ accuracy_score(y_test, y_pred)
 
 ### 目次
 
-- Dockerとは？
-- 機械学習のモデルを用意
-- 機械学習のモデルをAPIに組み込む
-- イメージを作成しリポジトリにアップロード
+- <span class="already-explained-item">Dockerとは？</span>
+- <span class="already-explained-item">機械学習のモデルを用意</span>
+- @color[#e22b30](機械学習のモデルをAPIに組み込む)
+- イメージ作成 & リポジトリにアップロード
 - デプロイ先でイメージを実行
 
 +++
@@ -288,10 +288,10 @@ TODO: 画像を入れる
 
 ### 目次
 
-- Dockerとは？
-- 機械学習のモデルを用意
-- 機械学習のモデルをAPIに組み込む
-- イメージを作成しリポジトリにアップロード
+- <span class="already-explained-item">Dockerとは？</span>
+- <span class="already-explained-item">機械学習のモデルを用意</span>
+- <span class="already-explained-item">機械学習のモデルをAPIに組み込む</span>
+- @color[#e22b30](イメージ作成 & リポジトリにアップロード)
 - デプロイ先でイメージを実行
 
 +++
@@ -354,11 +354,11 @@ TODO: 画像を入れる
 
 ### 目次
 
-- Dockerとは？
-- 機械学習のモデルを用意
-- 機械学習のモデルをAPIに組み込む
-- イメージを作成しリポジトリにアップロード
-- デプロイ先でイメージを実行
+- <span class="already-explained-item">Dockerとは？</span>
+- <span class="already-explained-item">機械学習のモデルを用意</span>
+- <span class="already-explained-item">機械学習のモデルをAPIに組み込む</span>
+- <span class="already-explained-item">イメージ作成 & リポジトリにアップロード</span>
+- @color[#e22b30](デプロイ先でイメージを実行)
 
 +++
 
