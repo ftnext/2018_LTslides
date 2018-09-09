@@ -28,3 +28,7 @@
 .later-explained {
   visibility: hidden;
 }
+
+.already-explained-item {
+  opacity: 0.5;
+}
