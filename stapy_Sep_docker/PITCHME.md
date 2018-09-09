@@ -1,5 +1,5 @@
 # Entrance of Docker for Pythonista
-## 〜DockerではじめるPython環境構築（←要調整）〜
+## 〜Dockerではじめる機械学習モデルのデプロイ〜
 #### みんなのPython勉強会#38 (2018/09/12) nikkie
 
 ---
@@ -7,21 +7,27 @@
 ### About nikkie
 
 - Alias @ftnext: [Twitter](https://twitter.com/ftnext), [Qiita](https://qiita.com/ftnext), [はてなブログ](http://nikkie-ftnext.hatenablog.com/)
-- Software Engineer?
-- Love Python@color[#eba3ff](@fa[heart]), Love Docker@color[#eba3ff](@fa[heart]@fa[heart])
+- Software Engineer (3rd year)
+	- Self-taught Python@color[#eba3ff](@fa[heart]) & Docker@color[#eba3ff](@fa[heart]@fa[heart])
+	- 二つ名「Pythonのもくもく会でAzureでハマっている人」
+	- 2018/08~ [株式会社キカガク](https://www.kikagaku.co.jp)にエンジニアとしてJoin
 
 +++
 
 ### Joined Translation
 
-- Django Girls Tutorial 翻訳に関わりました。
+- Django Girls Tutorial 翻訳に関わりました
 	- https://tutorial.djangogirls.org/ja/
+	- Django 2.0.x
+	- Deploy to PythonAnywhere
+- この秋、Django Girls Workshop Coachデビュー
 
 ---
 
 ### About this talk
 
 - 一推しのDockerをPythonistaに知ってほしい！使ってほしい！
+	- Dockerをまだ触ったことがない方が触るきっかけとなれば幸いです
 - 題材: 機械学習のモデルをAPIとして公開
 	- Dockerを使ってAPIとして公開します
 
@@ -29,46 +35,345 @@
 
 ### 注意事項
 
-- Dockerについてはざっくり理解を優先した説明です(学習リソース示す)
-
-+++
-
-### 登場人物
-
-- Irisデータセット
-- Flask
-- Docker
-
-+++
-
-### Irisデータセット
-
-- みんな大好き、あやめのデータ
-  - がくの幅・長さ、花びらの幅・長さ[単位:cm]、品種
-- scikit-learnを使ってあやめの品種の分類器を作る
-- 分類器をAPIにしたい(Webアプリとして公開したい)
-
-+++
-
-### Flask
-
-> ウェブフレームワークの1つ（『独学プログラマー』p.218）
-
-- 「シンプルなウェブアプリケーションをシンプルに作るときに使う」
-  - 機械学習のモデルのAPI化に向く
+- Dockerについてはざっくり理解を優先した説明です
+- Appendixも用意しましたが、わからないことは遠慮なく質問してください
+- Docker独学の身なので、詳しい方がいらっしゃったら懇親会で教えてください
 
 +++
 
 ### 目次
 
-- TODO: 各スライドがFIXしたらアップデートする
 - Dockerとは？
-- 分類器作成 & API化
-- コンテナ化 & クラウドにデプロイ
+- 機械学習のモデルをAPIとして公開
+	- 次の話の中で手順をブレイクダウンします
 
 +++
 
 ### Dockerとは？
+
+- アプリケーションが動作する状態で持ち運ぶことを実現したプラットフォーム
+- アプリケーションの持ち運びに関連する2概念
+	- コンテナ
+	- イメージ
+
++++
+
+### イメージとは？
+
+- 動作可能なアプリケーション
+	- ソースコード+実行環境（ただし動作はしていない）
+	- Dockerfile(テキストファイル)から`build`される
+		- Dockerfileにはイメージの作成手順を書く
+- イメージを持ち運ぶ
+	- クラウド上のリポジトリにアップロードして、イメージを共有（配布）できる
+	- 例: 開発環境(Docker使用)で`build`したイメージをDocker Hub(リポジトリ)にアップロード
+
++++
+
+### コンテナとは？
+
+- 動作させたイメージ（＝動作するアプリケーション）
+	- イメージを`run`するとコンテナが起動する
+- 仮想マシンのようにも見える
+	- イメージを`run`する際に、ホストマシンと仮想マシンの接続を設定する
+	- 例: ポート、フォルダの共有設定
+
++++
+
+### Dockerでデプロイするには
+
+1. アプリケーションを用意
+1. Dockerfileを書いてイメージ作成
+1. イメージをリポジトリにアップロード
+1. デプロイ先でイメージを取得し、実行(`run`)する
+
++++
+
+### Dockerを使って機械学習のモデルをAPIとして公開するには
+
+1. アプリケーションを用意
+		1. 機械学習のモデルを用意
+		1. 機械学習のモデルをAPIに組み込む
+1. Dockerfileを書いてイメージ作成
+1. イメージをリポジトリ(Docker Hub)にアップロード
+1. デプロイ先でイメージを取得し、実行(`run`)する
+		- GCPのVM(Ubuntu 16.04)で実行
+
+---
+
+### 目次
+
+- Dockerとは？
+- 機械学習のモデルを用意
+- 機械学習のモデルをAPIに組み込む
+- イメージを作成しリポジトリにアップロード
+- デプロイ先でイメージを実行
+
++++
+
+### 今回の分類器
+
+- あやめの品種の分類器を作る
+	- Irisデータセット(あやめの花のデータ)
+	- 花びらの長さ 5.1cm, 幅 2.4cm -> 品種は virginica と分類
+- scikit-learnを使う
+
++++
+
+### あやめの分類器作成手順
+
+- 目標: あやめの花びらの長さと幅から品種を分類する
+1. データセットの分割
+1. 花びらの長さと幅を標準化
+1. パーセプトロンを学習
+- 注: 今回、分類器の性能にはこだわっていません
+
++++
+
+### データセット分割、標準化
+
+```python
+iris = datasets.load_iris()
+# Petal(花びら)のlengthとwidthから品種を分類する
+X = iris.data[:, [2, 3]]
+y = iris.target
+X_train, X_test, y_train, y_test = train_test_split(
+		X, y, test_size=0.3, random_state=0)
+sc = StandardScaler()
+sc.fit(X_train)
+X_train_std = sc.transform(X_train)
+X_test_std = sc.transform(X_test)
+```
+- [『Python機械学習プログラミング』 3章](https://github.com/rasbt/python-machine-learning-book/blob/master/code/ch03/ch03.ipynb)に基づく
+
++++
+
+### パーセプトロンの学習、性能確認
+
+- 分類の正解率: 91.1%
+
+```python
+ppn = Perceptron(max_iter=40,
+		eta0=0.1, random_state=0, shuffle=True)
+ppn.fit(X_train_std, y_train)
+y_pred = ppn.predict(X_test_std)
+accuracy_score(y_test, y_pred)
+```
+
+- [『Python機械学習プログラミング』 3章](https://github.com/rasbt/python-machine-learning-book/blob/master/code/ch03/ch03.ipynb)に基づく
+
++++
+
+### `joblib`で掃き出す
+
+- 分類器: `joblib.dump(ppn, 'ppn_iris.pkl')`
+- 標準化のScaler: `joblib.dump(sc, 'sc_iris_petal.pkl')`
+- Webアプリケーションで`joblib.load`して使うため
+
+---
+
+### 目次
+
+- Dockerとは？
+- 機械学習のモデルを用意
+- 機械学習のモデルをAPIに組み込む
+- イメージを作成しリポジトリにアップロード
+- デプロイ先でイメージを実行
+
++++
+
+### あやめの分類器をAPIに組み込む
+
+- 機械学習のモデルのAPI化には、Flaskが向く
+
+> ウェブフレームワークの1つ（『独学プログラマー』p.218）
+
+- エンドポイント(`/predict`)
+	- 利用者は花びらの長さと幅のJSONデータをPOSTする
+	- APIがあやめの品種を返す
+
++++
+
+### APIの処理
+
+1. 花びらの長さと幅のJSONがPOSTされる
+		- `{ "length": 5.1, "width": 2.4 }`
+1. 分類器に渡す前に標準化する
+1. 分類器で分類する
+1. 分類結果をJSONで返す
+		- `{ "prediction": "virginica" }`
+
++++
+
+### ソースコードに書き起こす (app.py)
+
+```python
+sc = joblib.load('sc_iris_petal.pkl')
+ppn = joblib.load('ppn_iris.pkl')
+
+@app.route('/predict', methods=['POST'])
+def predict():
+    input_ = request.get_json()
+    length = float(input_['length'])
+    width = float(input_['width'])
+    input_std = sc.transform(np.array([[length, width]]))
+    prediction = ppn.predict(input_std)
+    response = jsonify(
+        {'prediction': IRIS_KIND[int(prediction[0])]})
+    response.status_code = 200
+    return response
+```
+
+- [GitHub ftnext/iris_api app/app.py](https://github.com/ftnext/iris_api/blob/20c7733c31faf98c9050f2d243382dbe49c176fa/app/app.py)
+
++++
+
+### ファイルの配置
+
+- app
+  - app.py
+  - ppn_iris.pkl
+  - sc_iris_petal.pkl
+- appディレクトリ内で`python app.py`で開発サーバ起動
+
++++
+
+### Flaskの開発サーバで動作確認
+
+TODO: 画像を入れる
+
+---
+
+### 目次
+
+- Dockerとは？
+- 機械学習のモデルを用意
+- 機械学習のモデルをAPIに組み込む
+- イメージを作成しリポジトリにアップロード
+- デプロイ先でイメージを実行
+
++++
+
+### イメージを作成する
+
+- イメージ＝ソースコード+実行環境
+1. APIのソースコードを配置
+1. APIを実行する設定をする
+		- gunicornを使って本番サーバとして実行
+		- 開発サーバ(`python app.py`で実行するサーバ)は、APIとして公開する際は使うべきではない
+
++++
+
+### ファイル類の配置
+
+- Dockerfile <- NEW!
+- requirements.txt <- NEW!
+- app
+  - app.py
+  - ppn_iris.pkl
+  - sc_iris_petal.pkl
+
++++
+
+### Dockerfileに書き起こす
+
+```Dockerfile
+FROM python:3.6
+RUN apt update && apt install python-dev -y
+COPY . /home
+RUN cd /home && pip install -r requirements.txt
+EXPOSE 5000
+WORKDIR /home/app
+ENTRYPOINT ["gunicorn", "-b", "0.0.0.0:5000", "--access-logfile", "-", "--error-logfile", "-"]
+CMD ["app:app"]
+```
+
+参考: [chhantyal/flask-docker](https://github.com/chhantyal/flask-docker/blob/68c0e439c50b12989fb87548e32ca1b1dfeb11e8/Dockerfile)
+
++++
+
+### リポジトリにアップロード
+
+1. イメージ作成: `docker build -t <イメージ名:バージョン> .`
+1. リポジトリにアップロード
+		- `docker login` && `docker push <イメージ名:バージョン>`
+- 開発環境でイメージの動作確認
+	- `docker run -i -t --rm -p 5000:5000 <イメージ名:バージョン>`
+
++++
+
+### 動作の様子
+
+- 注: 開発環境はDocker for Mac(18.06.1-ce-mac73)です
+
+TODO: 画像を入れる
+
+---
+
+### 目次
+
+- Dockerとは？
+- 機械学習のモデルを用意
+- 機械学習のモデルをAPIに組み込む
+- イメージを作成しリポジトリにアップロード
+- デプロイ先でイメージを実行
+
++++
+
+### デプロイ戦略
+
+- 大きく2通り考えられる
+- VM利用: dockerコマンドを設定。取得したイメージをrunする
+- PaaS利用: リポジトリのコンテナを指定するだけ
+
++++
+
+### VMにデプロイ！
+
+- GCPにUbuntu16.04のVMを構築
+- dockerコマンドを設定
+	- 参考: [GCEの無料枠を使って個人用Mastodonを立てる(translucensさん はてなブログ)](https://translucens.hatenablog.jp/entry/mastodon-gce)
+- イメージを取得して`run`する
+- 注: この方法は本番環境としてAPIを運用するには不適切(Kubernetesを使うべき)
+
++++
+
+### 動作の様子
+
+TODO: 画像を入れる
+
++++
+
+### PaaSにデプロイ！
+
+- AzureのWebAppsにはコンテナを指定することも可能
+- しかし、ローカル、GCPのVMでは動くイメージがWebAppsでは動作しない。。
+	- 「Pythonのもくもく会でAzureでハマっている人」(再掲)
+	- 原因調査中。引き続き宿題事項として取り組んでいきます。。
+
+---
+
+### まとめ: Entrance of Docker for Pythonista
+
+- あやめの分類器をAPIにし、DockerでGCPのVMにデプロイした
+- Dockerは、アプリケーションが動作する状態で持ち運ぶことを実現したプラットフォーム
+	- イメージ: 動作可能なアプリケーション（＝ソースコード+実行環境）
+	- コンテナ: 動作させたイメージ（＝動作するアプリケーション）
+- Dockerを触ってみようと思っていただけたら幸いです
+
++++
+
+## Happy Docker Life!
+### ご清聴ありがとうございました。
+Contact: [Twitter @ftnext](https://twitter.com/ftnext)
+
+---
+
+# Appendix
+
+TODO: このあと詰める
+
++++
 
 - アプリケーションを動作する状態で持ち運ぶための技術
 - 「コンテナ型仮想化」
@@ -112,178 +417,3 @@ Dockerコンテナは仮想マシンとして振る舞うように見える
 - ホスト／ゲスト
 - Dockerイメージ
 - Dockerコンテナ
-
----
-
-### あやめの分類器作成
-
-- あやめの花びらの長さと幅から品種を分類する
-	- 長さ 5.1cm, 幅 2.4cm -> 品種はvirginica
-- [Python機械学習プログラミング 3章](https://github.com/rasbt/python-machine-learning-book/blob/master/code/ch03/ch03.ipynb)に基づく
-- 注: 今回、分類器の性能にはこだわっていません
-
-+++
-
-### データセット分割、標準化
-
-```python
-iris = datasets.load_iris()
-# Petal(花びら)のlengthとwidthから品種を分類する
-X = iris.data[:, [2, 3]]
-y = iris.target
-X_train, X_test, y_train, y_test = train_test_split(
-		X, y, test_size=0.3, random_state=0)
-sc = StandardScaler()
-sc.fit(X_train)
-X_train_std = sc.transform(X_train)
-X_test_std = sc.transform(X_test)
-```
-
-+++
-
-### パーセプトロンの学習、性能確認
-
-```python
-ppn = Perceptron(max_iter=40, eta0=0.1, random_state=0, shuffle=True)
-ppn.fit(X_train_std, y_train)
-y_pred = ppn.predict(X_test_std)
-accuracy_score(y_test, y_pred)
-```
-
-- 分類の正解率: 91.1%
-
-+++
-
-### `joblib`で掃き出す
-
-- Webアプリケーションでloadするため
-- 分類器: `joblib.dump(ppn, 'ppn_iris.pkl')`
-- 標準化のScaler: `joblib.dump(sc, 'sc_iris_petal.pkl')`
-
-+++
-
-### APIがやること
-
-1. 花びらの長さと幅のJSONがPOSTされる
-		- `{ "length": 5.1, "width": 2.4 }`
-1. 分類器に渡す前に標準化する
-1. 分類器で分類する
-1. 分類結果をJSONで返す
-		- `{ "prediction": "virginica" }`
-
-+++
-
-### ファイル類の配置
-
-- app
-  - app.py
-  - ppn_iris.pkl
-  - sc_iris_petal.pkl
-
-+++
-
-### Webアプリ側で読み込む (app.py)
-
-```python
-sc = joblib.load('sc_iris_petal.pkl')
-ppn = joblib.load('ppn_iris.pkl')
-```
-
-+++
-
-### ソースコードに起こす (app.py)
-
-```python
-@app.route('/predict', methods=['POST'])
-def predict():
-    input_ = request.get_json()
-    length = float(input_['length'])
-    width = float(input_['width'])
-    input_std = sc.transform(np.array([[length, width]]))
-    prediction = ppn.predict(input_std)
-    response = jsonify(
-        {'prediction': IRIS_KIND[int(prediction[0])]})
-    response.status_code = 200
-    return response
-```
-
-+++
-
-### 動作の様子
-
-画像を入れる
-
----
-
-### コンテナ化
-
-分類器のAPIを持ち運べるようにする
-
-1. Dockerfileを作る
-1. Dockerfileからイメージを作る
-1. イメージからコンテナを作る
-
-TODO: 用語の説明を入れること
-
-+++
-
-### イメージの概要
-
-- FlaskのAPIのソースコードを配置
-- APIを実行する
-	- 本番サーバとして実行
-	- `python app.py`のように実行する開発サーバはAPIとして公開する際は使うべきではない
-
-+++
-
-### Dockerfile
-
-```Dockerfile
-FROM python:3.6
-RUN apt update && apt install python-dev -y
-COPY . /home
-RUN cd /home && pip install -r requirements.txt
-EXPOSE 5000
-WORKDIR /home/app
-ENTRYPOINT ["gunicorn", "-b", "0.0.0.0:5000", "--access-logfile", "-", "--error-logfile", "-"]
-CMD ["app:app"]
-```
-
-参考: [chhantyal/flask-docker](https://github.com/chhantyal/flask-docker/blob/68c0e439c50b12989fb87548e32ca1b1dfeb11e8/Dockerfile)
-
-+++
-
-### ファイル類の配置
-
-- Dockerfile <- NEW!
-- requirements.txt <- NEW!
-- app
-  - app.py
-  - ppn_iris.pkl
-  - sc_iris_petal.pkl
-
-+++
-
-### build image
-
-- `docker build -t <イメージ名:バージョン> .`
-- Dockerfileをベースにイメージを作成する
-
-+++
-
-### イメージを実行する
-
-- `docker run -p 5000:5000 <イメージ名:バージョン>`
-
-+++
-
-### 動作の様子
-
-画像を入れる
-
-+++
-
-### クラウドにデプロイ
-
-
----
