@@ -313,7 +313,7 @@ def predict():
 
 - @color[#2743d2](Dockerfile) <- 追加
 - @color[#2743d2](requirements.txt) <- 追加
-- app <- @color[#e22b30](中身をイメージへ配置)
+- app <- @color[#e22b30](イメージにて`app.py`を実行)
   - app.py
   - ppn_iris.pkl
   - sc_iris_petal.pkl
@@ -356,7 +356,8 @@ CMD ["app:app"]
 1. イメージ作成: `docker build -t <イメージ名:バージョン> .`
 1. リポジトリにアップロード
 	- `docker login` してから `docker push <イメージ名:バージョン>`
-開発環境でイメージの動作確認する場合
+	- [DockerHub ftnext/iris_api](https://hub.docker.com/r/ftnext/iris_api/)
+念のため、開発環境でイメージの動作確認
 	- `docker run -i -t --rm -p 5000:5000 <イメージ名:バージョン>`
 	- 注: 開発環境は、Docker for Mac(18.06.1-ce-mac73)
 
