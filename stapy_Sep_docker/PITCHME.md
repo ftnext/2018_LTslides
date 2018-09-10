@@ -370,7 +370,7 @@ CMD ["app:app"]
 
 - 大きく2通り考えられる
 - VM利用: dockerコマンドを設定。取得したイメージをrunする
-- PaaS利用: リポジトリのコンテナを指定するだけ
+- PaaS利用: リポジトリのイメージを指定するだけ
 
 +++
 
@@ -394,7 +394,7 @@ CMD ["app:app"]
 
 ### PaaSにデプロイ！
 
-- AzureのWebAppsにはコンテナを指定することも可能
+- AzureのWebAppsにはイメージを指定することも可能
 - しかし、ローカル、GCPのVMでは動くイメージがWebAppsでは動作しない。。
 	- 「Pythonのもくもく会でAzureでハマっている人」(再掲)
 	- 原因調査中。引き続き宿題事項として取り組んでいきます。。
@@ -431,7 +431,7 @@ Contact: [Twitter @ftnext](https://twitter.com/ftnext)<br>
 
 ### 参考資料
 
-- O'Reilly [『Docker』](https://www.oreilly.co.jp/books/9784873117768/): Flaskアプリをコンテナにする手順が学べます
+- O'Reilly [『Docker』](https://www.oreilly.co.jp/books/9784873117768/): Flaskアプリをイメージにする手順が学べます
 - モデルのAPI化: [A Flask API for serving scikit-learn models](https://towardsdatascience.com/a-flask-api-for-serving-scikit-learn-models-c8bcdaa41daa)
 - 定期的に[Dockerを取り上げてくださるサポーターズ勉強会](https://supporterzcolab.com/search/?q=docker)で知見を深めました
 
