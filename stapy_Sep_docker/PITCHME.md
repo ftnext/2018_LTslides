@@ -343,14 +343,15 @@ CMD ["app:app"]
 	- `docker login` && `docker push <イメージ名:バージョン>`
 - 開発環境でイメージの動作確認する場合
 	- `docker run -i -t --rm -p 5000:5000 <イメージ名:バージョン>`
+	- 注: 開発環境は、Docker for Mac(18.06.1-ce-mac73)
 
 +++
 
-### 動作の様子
+### 動作の様子 (Docker for Mac)
 
-- 注: 開発環境はDocker for Mac(18.06.1-ce-mac73)です
-
-TODO: 画像を入れる
+<span class="api-result-img">
+![コンテナの本番サーバのレスポンス](stapy_Sep_docker/assets/container_flask_api.png)
+</span>
 
 ---
 
@@ -384,7 +385,9 @@ TODO: 画像を入れる
 
 ### 動作の様子
 
-TODO: 画像を入れる
+<span class="api-result-img">
+![コンテナの本番サーバのレスポンス](stapy_Sep_docker/assets/gcp_vm_flask_api.png)
+</span>
 
 +++
 
