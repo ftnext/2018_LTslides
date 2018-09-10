@@ -320,6 +320,20 @@ def predict():
 
 +++
 
+### イメージの環境設定: requirements.txt
+
+- イメージに以下のパッケージを`pip install`
+
+```txt
+Flask==1.0.2
+gunicorn
+numpy==1.13.3
+scikit-learn==0.19.2
+scipy==1.1.0
+```
+
++++
+
 ### Dockerfileに書き起こす
 
 ```Dockerfile
