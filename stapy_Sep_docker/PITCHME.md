@@ -282,7 +282,9 @@ def predict():
 
 ### Flaskの開発サーバで動作確認
 
+<span class="api-result-img">
 ![Flaskの開発サーバのレスポンス](stapy_Sep_docker/assets/local_flask_api.png)
+</span>
 
 ---
 
