@@ -282,7 +282,7 @@ def predict():
 
 ### Flaskの開発サーバで動作確認
 
-TODO: 画像を入れる
+![Flaskの開発サーバのレスポンス](stapy_Sep_docker/assets/local_flask_api.png)
 
 ---
 
