@@ -29,7 +29,7 @@
 	- Deploy to PythonAnywhere (not Heroku)
 - この秋、Django Girls Workshop Coachデビュー
 
----
++++
 
 ### About this talk
 
@@ -68,36 +68,36 @@
 
 ### イメージとは？
 
-- 動作可能なアプリケーション
-	- <span class="later-explained">ソースコード+実行環境（ただし動作はしていない）</span>
+- 動作可能なアプリケーション（ただし動作はしていない）
+	- <span class="later-explained">ソースコード+実行環境</span>
 	- <span class="later-explained">Dockerfile(テキストファイル)から`build`される</span>
 		- <span class="later-explained">Dockerfileにはイメージの作成手順を書く</span>
 - イメージを持ち運ぶ
-	- <span class="later-explained">クラウド上のリポジトリにアップロードして、イメージを共有（配布）できる</span>
+	- <span class="later-explained">クラウド上のリポジトリにアップロードして、イメージを共有(配布)できる</span>
 	- <span class="later-explained">例: 開発環境(Docker使用)で`build`したイメージをDocker Hub(リポジトリ)にアップロード</span>
 
 +++
 
 ### イメージとは？
 
-- 動作可能なアプリケーション
-	- ソースコード+実行環境（ただし動作はしていない）
+- 動作可能なアプリケーション（ただし動作はしていない）
+	- ソースコード+実行環境
 	- Dockerfile(テキストファイル)から`build`される
 		- Dockerfileにはイメージの作成手順を書く
 - イメージを持ち運ぶ
-	- <span class="later-explained">クラウド上のリポジトリにアップロードして、イメージを共有（配布）できる</span>
+	- <span class="later-explained">クラウド上のリポジトリにアップロードして、イメージを共有(配布)できる</span>
 	- <span class="later-explained">例: 開発環境(Docker使用)で`build`したイメージをDocker Hub(リポジトリ)にアップロード</span>
 
 +++
 
 ### イメージとは？
 
-- 動作可能なアプリケーション
-	- ソースコード+実行環境（ただし動作はしていない）
+- 動作可能なアプリケーション（ただし動作はしていない）
+	- ソースコード+実行環境
 	- Dockerfile(テキストファイル)から`build`される
 		- Dockerfileにはイメージの作成手順を書く
 - イメージを持ち運ぶ
-	- クラウド上のリポジトリにアップロードして、イメージを共有（配布）できる
+	- クラウド上のリポジトリにアップロードして、イメージを共有(配布)できる
 	- 例: 開発環境(Docker使用)で`build`したイメージをDocker Hub(リポジトリ)にアップロード
 
 +++
@@ -134,12 +134,12 @@
 ### Dockerを使って機械学習のモデルをAPIとして公開するには
 
 1. アプリケーションを用意
-	1. 機械学習のモデルを用意
-	1. 機械学習のモデルをAPIに組み込む
+	1. @color[#e22b30](機械学習のモデル)を用意
+	1. 機械学習のモデルを@color[#e22b30](APIに組み込む)
 1. Dockerfileを書いてイメージ作成
-1. イメージをリポジトリ(Docker Hub)にアップロード
+1. イメージをリポジトリ(@color[#e22b30](Docker Hub))にアップロード
 1. デプロイ先でイメージを取得し、実行(`run`)する
-	- GCPのVM(Ubuntu 16.04)で実行
+	- @color[#e22b30](GCPのVM(Ubuntu 16.04))で実行
 
 ---
 
@@ -166,7 +166,7 @@
 
 - 目標: あやめの花びらの長さと幅から品種を分類する
 	1. データセットの分割
-	1. 花びらの長さと幅を標準化
+	1. 花びらの長さと幅のデータを標準化
 	1. パーセプトロンを学習
 - 注: 今回、分類器の性能にはこだわっていません
 
@@ -211,6 +211,7 @@ accuracy_score(y_test, y_pred)
 - 分類器: `joblib.dump(ppn, 'ppn_iris.pkl')`
 - 標準化のScaler: `joblib.dump(sc, 'sc_iris_petal.pkl')`
 - Webアプリケーションで`joblib.load`して使うため
+- ここまでのソースコード: [ftnext/iris_perceptron.ipynb](https://gist.github.com/ftnext/07bccfa93b24edec29292ec548e8d6e3)
 
 ---
 
@@ -240,7 +241,7 @@ accuracy_score(y_test, y_pred)
 
 1. 花びらの長さと幅のJSONがPOSTされる
 	- `{ "length": 5.1, "width": 2.4 }`
-1. 分類器に渡す前に、POSTされた長さと幅を標準化する
+1. 分類器に渡す前に、POSTされた長さと幅の値を標準化する
 1. 分類器で分類する
 1. 分類結果をJSONで返す
 	- `{ "prediction": "virginica" }`
@@ -310,9 +311,9 @@ def predict():
 
 ### ファイル類の配置
 
-- Dockerfile <- NEW!
-- requirements.txt <- NEW!
-- app
+- @color[#2743d2](Dockerfile) <- 追加
+- @color[#2743d2](requirements.txt) <- 追加
+- app <- @color[#e22b30](中身をイメージへ配置)
   - app.py
   - ppn_iris.pkl
   - sc_iris_petal.pkl
@@ -340,8 +341,8 @@ CMD ["app:app"]
 
 1. イメージ作成: `docker build -t <イメージ名:バージョン> .`
 1. リポジトリにアップロード
-	- `docker login` && `docker push <イメージ名:バージョン>`
-- 開発環境でイメージの動作確認する場合
+	- `docker login` してから `docker push <イメージ名:バージョン>`
+開発環境でイメージの動作確認する場合
 	- `docker run -i -t --rm -p 5000:5000 <イメージ名:バージョン>`
 	- 注: 開発環境は、Docker for Mac(18.06.1-ce-mac73)
 
@@ -404,19 +405,35 @@ CMD ["app:app"]
 
 - あやめの分類器をAPIにし、DockerでGCPのVMにデプロイした
 - Dockerは、アプリケーションが動作する状態で持ち運べるプラットフォーム
-	- イメージ: 動作可能なアプリケーション（＝ソースコード+実行環境）
-	- コンテナ: 動作させたイメージ（＝動作するアプリケーション）
+	- イメージ: アプリケーションのソースコード+実行環境
+	- コンテナ: 動作させたアプリケーション
 
 +++
 
 ### Dockerを使った機械学習モデルのデプロイ(仮説)
+
+1. モデルを用意する（精度にこだわって）
+2. FlaskでAPI化
+3. アプリケーションをコンテナ化
+4. VM(またはPaaS)にデプロイ
+	- VMはGCPに限らない
+	- centOSの場合もdockerを設定すればよい
 
 +++
 
 ### ご清聴ありがとうございました。
 Dockerを触ってみようと思っていただけたら幸いです
 ## Happy Docker Life!
-Contact: [Twitter @ftnext](https://twitter.com/ftnext)
+Contact: [Twitter @ftnext](https://twitter.com/ftnext)<br>
+参考資料、Appendixが続きます
+
++++
+
+### 参考資料
+
+- O'Reilly [『Docker』](https://www.oreilly.co.jp/books/9784873117768/): Flaskアプリをコンテナにする手順が学べます
+- モデルのAPI化: [A Flask API for serving scikit-learn models](https://towardsdatascience.com/a-flask-api-for-serving-scikit-learn-models-c8bcdaa41daa)
+- 定期的に[Dockerを取り上げてくださるサポーターズ勉強会](https://supporterzcolab.com/search/?q=docker)で知見を深めました
 
 ---
 
