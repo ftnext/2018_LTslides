@@ -320,20 +320,6 @@ def predict():
 
 +++
 
-### イメージの環境設定: requirements.txt
-
-- イメージに以下のパッケージを`pip install`
-
-```txt
-Flask==1.0.2
-gunicorn
-numpy==1.13.3
-scikit-learn==0.19.2
-scipy==1.1.0
-```
-
-+++
-
 ### Dockerfileに書き起こす
 
 ```Dockerfile
@@ -452,51 +438,202 @@ Contact: [Twitter @ftnext](https://twitter.com/ftnext)<br>
 
 ---
 
-# Appendix
+### Appendix
 
-TODO: このあと詰める
-
-+++
-
-- アプリケーションを動作する状態で持ち運ぶための技術
-- 「コンテナ型仮想化」
-
-+++
-
-### アプリケーションを持ち運ぶ
-
-- アプリケーションには環境の設定がある(OS、環境変数)
-- 開発環境と本番環境の差分を吸収
-	- Dockerコンテナで開発を進める
-	- デプロイする際は、Dockerで移動させる
+- Docker導入
+- VirtualBoxと何が違うのか？
+- ソースコードについて(Flask/Dockerfile)
+- dockerコマンドについて
+	- `build`, `login`, `push`, `run`
+- docker-compose.yml
+- 本番環境での運用
+- APIの動作確認ツール
 
 +++
 
-### コンテナまわりの用語集
+### Docker導入
 
-- Dockerイメージ: コンテナのもと
-	- 実行(`docker run`)してコンテナが動作する
-- Dockerfile: イメージの設計書(テキストファイル)
-	- ビルド(`docker build`)してイメージができる
-
-+++
-
-Dockerコンテナは仮想マシンとして振る舞うように見える
-`docker run`する際はホストの間に接点を設定する
+- [今日からはじめるDocker - コンテナー仮想化の必要性を理解して、まず開発環境に導入してみよう！](https://employment.en-japan.com/engineerhub/entry/2017/09/28/110000)
+	- Windowsの方: Docker for Windows
+		- サポートされていないWindowsの場合: Docker Toolbox
+	- Macの方: Docker for Mac
+- なお、私はMacでのみDocker経験があります
 
 +++
 
-### Dockerのメリット
+### コンテナはVirtualBoxと何が違うのか？
 
-1. デプロイの省力化
-  - Flaskアプリケーションをデプロイして説明します
-1. 環境構築の省力化
-  - Appendix: 機械学習環境の構築
+- コンテナは仮想マシンのようにも見える
+- 違いは目的(『Docker』p.4)
+	- VirtualBoxは異なる環境の再現が目的
+	- コンテナはアプリケーションを持ち運べるようにすることが目的
+- アーキテクチャ(ハイパバイザ型／コンテナ型)の話は今回は省略します
 
 +++
 
-### 仮想化に関連する用語
+### Flaskソースコード解説
 
-- ホスト／ゲスト
-- Dockerイメージ
-- Dockerコンテナ
+```python
+@app.route('/predict', methods=['POST'])
+def predict():
+		# POSTされたJSONを取得(input_は辞書として扱える)
+    input_ = request.get_json()
+		# POSTされた長さと幅は文字列なので、小数に変換する
+    length = float(input_['length'])
+    width = float(input_['width'])
+		# 長さと幅の値を標準化
+    input_std = sc.transform(np.array([[length, width]]))
+		# predictionは分類器が返した0~2のラベル
+    prediction = ppn.predict(input_std)
+		# IRIS_KINDにラベルと品種名を定義済み
+    response = jsonify(
+        {'prediction': IRIS_KIND[int(prediction[0])]})
+    response.status_code = 200
+    return response
+```
+
++++
+
+### Dockerfile解説 1/3
+
+```Dockerfile
+# Python3.6系が設定済みのUbuntu環境をベースにする
+FROM python:3.6
+RUN apt update && apt install python-dev -y
+# ホストマシンに用意したファイル一式をイメージの/home以下にコピー
+COPY . /home
+```
+
++++
+
+### `COPY . /home`後の`/home`の中身
+
+- Dockerfile
+- requirements.txt
+- app
+  - app.py
+  - ppn_iris.pkl
+  - sc_iris_petal.pkl
+
++++
+
+### Dockerfile解説 2/3
+
+```Dockerfile
+RUN cd /home && pip install -r requirements.txt
+```
+
+- イメージに以下のパッケージを`pip install`
+
+```txt
+Flask==1.0.2
+gunicorn
+numpy==1.13.3
+scikit-learn==0.19.2
+scipy==1.1.0
+```
+
++++
+
+### Dockerfile解説 3/3
+
+```Dockerfile
+# イメージの5000番ポートを解放
+EXPOSE 5000
+# /home/app以下(app.pyがあるフォルダ)を対象にする
+WORKDIR /home/app
+# gunicornを使ってapp.pyを5000番ポートで動作させる
+ENTRYPOINT ["gunicorn", "-b", "0.0.0.0:5000", "--access-logfile", "-", "--error-logfile", "-"]
+CMD ["app:app"]
+```
+
++++
+
+### 今回のDockerfileには問題がある
+
+- 問題: rootユーザでアプリケーションを実行していること
+- rootユーザとは別にアプリケーション実行用のユーザを作るべき（『Docker』より）
+- 宿題事項として、今後アップデートします
+
++++
+
+### イメージの作成: `docker build`
+
+- Dockerfileからイメージを作成するコマンド
+- 例: `docker build -t ftnext/iris_api:1.0 .`
+	- 最後の`.`はカレントディレクトリにあるDockerfileを指定している
+	- `-t`で指定しているのはイメージのタグ名
+		- タグ名=リポジトリ名/イメージ名:バージョン
+
++++
+
+### リポジトリへのアップロード: `docker login`と`docker push`
+
+- `docker login`: DockerHubに対話的にログイン
+- `docker push ftnext/iris_api:1.0`: 端末内にある`ftnext/iris_api:1.0`イメージをDockerHubにアップロード
+
++++
+
+### リポジトリへのアップロード 注釈
+
+- 実は今回は`docker login`と`docker push`を使っていない
+- GitHubリポジトリとDockerHubリポジトリを連携させる設定をしている
+	- 参考: [Qiita DockerhubのAutomated build を設定する](https://qiita.com/FoxBoxsnet/items/a31fc46681d9b67c8cc6)
+
++++
+
+### コンテナ起動: `docker run`
+
+- イメージからコンテナを起動する: `docker run -i -t --rm -p 5000:5000 ftnext/iris_api:1.0`
+	- 基本はイメージを指定: `docker run ftnext/iris_api:1.0`
+	- コンテナで実行したい命令も指定できる: `docker run python:3.6 bash`
+	- オプションについては次のページへ
+
++++
+
+### `docker run`の`-i -t`, `--rm`オプション
+
+- `-i -t`: コンテナへの入力・出力の設定
+	- 例: `docker run -i -t python:3.6 bash`
+	- 結果: コマンドラインからコンテナに接続した状態になる
+- `--rm`: コンテナが停止したときにコンテナを削除する
+	- コンテナで作ったファイルやコンテナにインストールしたパッケージは消える
+
++++
+
+### `docker run`の`-p`オプション
+
+- `-p`: ポートの共有設定
+	- 書式は、ホストのポート番号:ゲストのポート番号
+	- `docker run -p 5000:5000 ftnext/iris_api:1.0`とすると、 http://127.0.0.1:5000/predict でコンテナ内のAPIを叩ける
+	- 端末の5000番ポートへのアクセスが、コンテナの5000番ポートへのアクセスとして扱われる
+
++++
+
+### docker-compose.yml
+
+- `docker run`時の設定をyml形式のファイルに書き出せる
+	- `docker-compose.yml`のあるフォルダで`docker-compose up`
+- 複数のイメージを扱う必要があるときに役に立つ
+	- 例: DjangoのイメージとMySQLのイメージを用意。MySQLのコンテナ -> Djangoのコンテナの順で起動したい
+
++++
+
+### 本番環境での運用: Kubernetes
+
+- 本番環境で`docker run`や`docker-compose up`をするのは不適切
+	- コンテナの状態を常時監視できないため
+- 本番環境では、コンテナの監視を提供する **オーケストレーションツール** を使う必要がある
+- デファクトのオーケストレーションツールはKubernetes
+- 以下のスライドで勉強中です: https://docs.google.com/presentation/d/1_mQJQ0Yz1zJHqUPefNYNPfx5mjHEbfRwTzUOaWi8vZ8/edit#slide=id.p
+
++++
+
+### APIの動作確認ツール
+
+- Advanced REST clientを使用
+- Google Chromeの拡張として入手できる
+
++++
+
+### EOF
