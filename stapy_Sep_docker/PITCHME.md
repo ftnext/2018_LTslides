@@ -471,21 +471,33 @@ Contact: [Twitter @ftnext](https://twitter.com/ftnext)<br>
 
 +++
 
-### Flaskソースコード解説
+### Flaskソースコード解説 1/2
 
 ```python
 @app.route('/predict', methods=['POST'])
 def predict():
-		# POSTされたJSONを取得(input_は辞書として扱える)
+	# POSTされたJSONを取得(input_は辞書として扱える)
     input_ = request.get_json()
-		# POSTされた長さと幅は文字列なので、小数に変換する
+	# POSTされた長さと幅は文字列なので、小数に変換する
     length = float(input_['length'])
     width = float(input_['width'])
-		# 長さと幅の値を標準化
+	# 長さと幅の値を標準化
     input_std = sc.transform(np.array([[length, width]]))
-		# predictionは分類器が返した0~2のラベル
+	# :
+```
+
++++
+
+### Flaskソースコード解説 2/2
+
+```python
+@app.route('/predict', methods=['POST'])
+def predict():
+	# :
+	# predictionは分類器が返した0~2のラベル
     prediction = ppn.predict(input_std)
-		# IRIS_KINDにラベルと品種名を定義済み
+	# IRIS_KINDにラベルと品種名を定義済み
+	# 品種を含むJSON(APIの返す値)を用意する
     response = jsonify(
         {'prediction': IRIS_KIND[int(prediction[0])]})
     response.status_code = 200
@@ -563,7 +575,7 @@ CMD ["app:app"]
 - 例: `docker build -t ftnext/iris_api:1.0 .`
 	- 最後の`.`はカレントディレクトリにあるDockerfileを指定している
 	- `-t`で指定しているのはイメージのタグ名
-		- タグ名=リポジトリ名/イメージ名:バージョン
+		- タグ名の書式は「リポジトリ名/イメージ名:バージョン」
 
 +++
 
@@ -586,8 +598,17 @@ CMD ["app:app"]
 
 - イメージからコンテナを起動する: `docker run -i -t --rm -p 5000:5000 ftnext/iris_api:1.0`
 	- 基本はイメージを指定: `docker run ftnext/iris_api:1.0`
-	- コンテナで実行したい命令も指定できる: `docker run python:3.6 bash`
-	- オプションについては次のページへ
+	- Dockerfileで定義されている`ENTRYPOINT`命令が実行される
+		- `CMD`命令で指定された引数が渡る
+		- 参考: [Qiita dockerのENTRYPOINTとCMDの書き方と使い分け、さらに併用](https://qiita.com/hnakamur/items/afddaa3dbe48ad2b8b5c)
+
+### コンテナ起動時の実行コマンド指定
+
+- コンテナで実行したい命令も指定できる: `docker run python:3.6 bash`
+	- `python:3.6`イメージからコンテナを起動し、bashコマンドでシェルを実行
+	- コンテナの入力・出力の設定をすると、コンテナに接続した状態になる(後述)
+- DockerfileのCMD命令に代えて、`docker run`で渡したコマンドが実行される
+- `docker run`のオプションについては次のページへ
 
 +++
 
@@ -625,7 +646,7 @@ CMD ["app:app"]
 	- コンテナの状態を常時監視できないため
 - 本番環境では、コンテナの監視を提供する **オーケストレーションツール** を使う必要がある
 - デファクトのオーケストレーションツールはKubernetes
-- 以下のスライドで勉強中です: https://docs.google.com/presentation/d/1_mQJQ0Yz1zJHqUPefNYNPfx5mjHEbfRwTzUOaWi8vZ8/edit#slide=id.p
+- [こちらの勉強会スライド](https://docs.google.com/presentation/d/1_mQJQ0Yz1zJHqUPefNYNPfx5mjHEbfRwTzUOaWi8vZ8/edit#slide=id.p)で勉強中です
 
 +++
 
