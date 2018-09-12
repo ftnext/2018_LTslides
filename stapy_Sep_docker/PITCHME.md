@@ -8,6 +8,7 @@
 
 - 当初「DockerではじめるPython環境構築」
 - 参加者の皆さまの関心の高いトピックでDockerについて話すため、「Dockerではじめる機械学習モデルのデプロイ」に変更
+- [Hackmd 環境構築のついてのメモ](https://hackmd.io/s/S1pCGQIuQ)
 
 +++
 
@@ -94,9 +95,9 @@
 ### イメージとは？
 
 - 動作可能なアプリケーション（ただし動作はしていない）
-	- ソースコード+実行環境
-	- Dockerfile(テキストファイル)から`build`される
-		- Dockerfileにはイメージの作成手順を書く
+	- <span class="already-explained-item">ソースコード+実行環境</span>
+	- <span class="already-explained-item">Dockerfile(テキストファイル)から`build`される</span>
+		- <span class="already-explained-item">Dockerfileにはイメージの作成手順を書く</span>
 - イメージを持ち運ぶ
 	- クラウド上のリポジトリにアップロードして、イメージを共有(配布)できる
 	- 例: 開発環境(Docker使用)で`build`したイメージをDocker Hub(リポジトリ)にアップロード
@@ -344,9 +345,13 @@ CMD ["app:app"]
 1. リポジトリにアップロード
 	- `docker login` してから `docker push <イメージ名:バージョン>`
 	- [DockerHub ftnext/iris_api](https://hub.docker.com/r/ftnext/iris_api/)
-念のため、開発環境でイメージの動作確認
-	- `docker run -i -t --rm -p 5000:5000 <イメージ名:バージョン>`
-	- 注: 開発環境は、Docker for Mac(18.06.1-ce-mac73)
+
++++
+
+### 開発環境でイメージの動作確認
+
+- `docker run -i -t --rm -p 5000:5000 <イメージ名:バージョン>`
+- 注: 開発環境は、Docker for Mac(18.06.1-ce-mac73)
 
 +++
 
@@ -602,6 +607,8 @@ CMD ["app:app"]
 	- Dockerfileで定義されている`ENTRYPOINT`命令が実行される
 		- `CMD`命令で指定された引数が渡る
 		- 参考: [Qiita dockerのENTRYPOINTとCMDの書き方と使い分け、さらに併用](https://qiita.com/hnakamur/items/afddaa3dbe48ad2b8b5c)
+
++++
 
 ### コンテナ起動時の実行コマンド指定
 
