@@ -1,4 +1,5 @@
-# Django Girls Tutorial翻訳に参加して（仮）
+# 翻訳は人のためならず
+### 〜Django Girls Tutorial翻訳で学んだこと〜
 #### PyLadies Tokyo 4周年記念パーティ LT (2018/10/08)
 #### nikkie
 
@@ -8,55 +9,69 @@
 
 +++
 
-### このLTでは
+### おめでたい場におめでたいことも持ち寄りました！
 
-- おめでたい場におめでたいことを持ち寄りました！
-- 祝 Django2.0.x対応 Django Girls Tutorial日本語版リリース @fa[birthday-cake]
-- 翻訳に参加して得たものについて話します
++++
+
+# 祝 Django Girls Tutorial 日本語版 Django2.0.x対応バージョンリリース @fa[birthday-cake]
+
++++
+
+### LT: 翻訳は人のためならず
+
+- ×: 翻訳は人のためにならないからやらない方がよい
+- ○: 翻訳は他の人のためだけでなく自分のためになる
+- 翻訳に参加して学んだことを話します
 
 +++
 
 ### About nikkie
 
 - Software Engineer (3rd year)
-- Alias @ftnext: [Twitter](https://twitter.com/ftnext), [Qiita](https://qiita.com/ftnext), [はてなブログ](http://nikkie-ftnext.hatenablog.com/)
 - 2018/05~ Join Translation (& Reviewer)
+- Alias @ftnext: [Twitter](https://twitter.com/ftnext), [Qiita](https://qiita.com/ftnext), [はてなブログ](http://nikkie-ftnext.hatenablog.com/)
 - 2018/09 #stapy 4代目LT王子戴冠
 
 ---
 
-### Django Girls Tutorial
+### Django Girls Tutorial とは
 
-- ブログを作るチュートリアル
-- 対象者：プログラミング未経験者
-- Django：PythonでWebアプリを作るためのパッケージ
-- Djangoに入門したい方にオススメ
-
-+++
-
-### Django Girls Tutorial
-
-- 旧バージョン：Django 1.11.x
-  - https://djangogirlsjapan.gitbooks.io/workshop_tutorialjp/content/
-- 新バージョン：Django 2.0.x
-  - https://tutorial.djangogirls.org/ja/
+- プログラミング未経験者向け
+- Djangoを使ってブログを作り、インターネットに公開する
+- 「Djangoに入門したい方にオススメ」と評価されている(個人的見解)
+- ※ Django：PythonでWebアプリを作るためのパッケージ
 
 +++
 
-### 新バージョンのTutorial
+### Django Girls Tutorial Django2.0.x対応とは
 
-- Django2.0.xに合わせてアップデート
-  - urls.py: `path()`
-  - models.py: `on_delete=models.CASCADE`
+- 2017年12月Djangoの2系がリリース
+- Tutorial（英語版）も2系にアップデート
+- 翻訳して日本語版Tutorialもアップデート ←イマココ
+
++++
+
+### Django2.0.x対応での変更点
+
+- Django2系に合わせてコードのアップデート
+
+```python
+# mysite/urls.py
+    path('', include('blog.urls')),
+# blog/models.py
+    author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
+```
+
 - デプロイ先はPythonAnywhere（Herokuからの卒業）
+- https://tutorial.djangogirls.org/ja/
 
 ---
 
-### Django Girls Tutorial翻訳に参加して
+### Django Girls Tutorial翻訳で学んだこと
 
-1. Djangoの使い方をつかんだ
-1. Django Girls Tutorialに精通した
-1. コミュニティに加わった
+1. Djangoの使い方
+1. Django Girls Tutorialに精通
+1. チームで達成
 
 +++
 
@@ -83,7 +98,7 @@
 ### Django Girls Tutorialに精通
 
 - Django Girls Tutorialのここが好き
-- Django Girls Tutorialって実は。。。
+- Django Girls Tutorialのお茶目なところ
 
 +++
 
@@ -96,7 +111,7 @@
 
 +++
 
-### 実は、誤植もあります。。
+### お茶目なところ
 
 - Pull Request上げていきます！
 - 例えば、デプロイ！ではまだ作っていないファイルがPythonAnywhereに送られています
@@ -109,27 +124,28 @@ templates tests.py urls.py views.py
 
 +++
 
-### コミュニティに加わる
+### チームで達成
 
-- Django Girls Tutorial修了レベルでも歓迎していただけた（感謝）
-- 翻訳 → レビュー → コーチ とステップアップ
-- 一歩でも先にいれば、教えられることがある
-
-+++
-
-### コミュニティに加わって思うこと
-
-- みんなで力を合わせて翻訳を成し遂げたのだから、多くの方に使ってほしい（フィードバック歓迎！）
-- 詰まったら、質問先の一つとして@ftnextまでお気軽にどうぞ
-- nikkie自身は、アウトプットでDjango入門した方のお役に立てたらと考えています
+- 少しずつ持ち寄って、リリースを達成
+- みんなで力を合わせて翻訳を成し遂げたのだから、多くの方に使ってほしい
+- お茶目なところを見つけたら、フィードバック歓迎！
 
 ---
 
-### まとめ：Django Girls Tutorial翻訳に参加して
+### まとめ：翻訳は人のためならず
 
 - Djangoの使い方がつかめた
 - 精通したので、Pull Requestでアップデートしていく
+- 少しずつ持ち寄って、チームで達成した
+
++++
+
+### 思うこと
+
+- Django Girls Tutorial修了レベルで翻訳に参加
+  - 「一歩でも先にいれば、教えられることがある」
 - コミュニティに受け入れていただけたので、今後は恩返ししていきたい
+  - Django入門した方のお役に立てるアウトプットができたら
 
 +++
 
