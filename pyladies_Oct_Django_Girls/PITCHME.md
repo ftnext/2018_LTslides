@@ -1,27 +1,35 @@
-# 翻訳は人のためならず
-### 〜Django Girls Tutorial翻訳で学んだこと〜
+# 翻訳は<br>人のためならず
+### 〜Django Girls Tutorial翻訳で<br>学んだ3つのこと〜
 #### PyLadies Tokyo 4周年記念パーティ LT (2018/10/08)
 #### nikkie
 
 ---
 
-# PyLadies Tokyo 4周年 おめでとうございます！ @fa[birthday-cake]
+# PyLadies Tokyo<br>4周年 おめでとう<br>ございます！ @fa[birthday-cake]
 
 +++
 
-### おめでたい場におめでたいことも持ち寄りました！
+### おめでたい場に<br>おめでたいことも持ち寄りました！
 
 +++
 
-# 祝 Django Girls Tutorial 日本語版 Django2.0.x対応バージョンリリース @fa[birthday-cake]
+# 祝 Django Girls<br>Tutorial 日本語版<br>nDjango2.0.x対応 @fa[birthday-cake]
 
 +++
 
 ### LT: 翻訳は人のためならず
 
+- 翻訳に参加して学んだことを話します
 - ×: 翻訳は人のためにならないからやらない方がよい
 - ○: 翻訳は他の人のためだけでなく自分のためになる
-- 翻訳に参加して学んだことを話します
+
++++
+
+### LT: 翻訳は人のためならず
+
+1. 自己紹介
+2. Django Girls Tutorialの紹介
+3. 翻訳で学んだ3つのこと（LTのメイン）
 
 +++
 
@@ -30,7 +38,7 @@
 - Software Engineer (3rd year)
 - 2018/05~ Join Translation (& Reviewer)
 - Alias @ftnext: [Twitter](https://twitter.com/ftnext), [Qiita](https://qiita.com/ftnext), [はてなブログ](http://nikkie-ftnext.hatenablog.com/)
-- 2018/09 #stapy 4代目LT王子戴冠
+- Self-taught Python@color[#eba3ff](@fa[heart]) & Docker@color[#eba3ff](@fa[heart])
 
 ---
 
@@ -47,7 +55,7 @@
 
 - 2017年12月Djangoの2系がリリース
 - Tutorial（英語版）も2系にアップデート
-- 翻訳して日本語版Tutorialもアップデート ←イマココ
+- 翻訳して日本語版Tutorialも<br>アップデート ←イマココ
 
 +++
 
@@ -71,13 +79,21 @@
 
 1. Djangoの使い方
 1. Django Girls Tutorialに精通
-1. チームで達成
+1. コミュニティの力
+
++++
+
+### Django Girls Tutorial翻訳で学んだこと
+
+1. Djangoの使い方
+1. Django Girls Tutorialに精通
+1. コミュニティの力
 
 +++
 
 ### Djangoの使い方
 
-- 翻訳とレビューの中で手を動かす中で、以下のフローを抽出
+- 翻訳とレビューで手を動かす中で、以下のフローを抽出
   1. プロジェクトを作る `django-admin startproject mysite .`
   1. アプリケーションを作る `python manage.py startapp blog`
   1. settings.py編集 `INSTALLED_APPS`など
@@ -95,6 +111,14 @@
 
 +++
 
+### Django Girls Tutorial翻訳で学んだこと
+
+1. Djangoの使い方
+1. Django Girls Tutorialに精通
+1. コミュニティの力
+
++++
+
 ### Django Girls Tutorialに精通
 
 - Django Girls Tutorialのここが好き
@@ -102,12 +126,14 @@
 
 +++
 
-### ここが好き
-
-> But it's not super important right now, so we will skip it.
+### ここが好き (@fa[heart])
 
 - ブログの投稿が見つからないときに404エラーページを表示する
 - 404エラーページのカスタマイズは「super importantじゃないから、今はやらない」
+
+> But it's not super important right now, so we will skip it.
+
+- super importantなものに集中する姿勢 (@fa[heart])
 
 +++
 
@@ -124,11 +150,19 @@ templates tests.py urls.py views.py
 
 +++
 
-### チームで達成
+### Django Girls Tutorial翻訳で学んだこと
 
-- 少しずつ持ち寄って、リリースを達成
-- みんなで力を合わせて翻訳を成し遂げたのだから、多くの方に使ってほしい
-- お茶目なところを見つけたら、フィードバック歓迎！
+1. Djangoの使い方
+1. Django Girls Tutorialに精通
+1. コミュニティの力
+
++++
+
+### コミュニティの力
+
+- 少しずつ力を出し合って、2.0.x対応を達成
+- -> 次は多くの方に使ってほしい
+- フィードバック歓迎！（もっといいものにしていきたい）
 
 ---
 
@@ -136,7 +170,7 @@ templates tests.py urls.py views.py
 
 - Djangoの使い方がつかめた
 - 精通したので、Pull Requestでアップデートしていく
-- 少しずつ持ち寄って、チームで達成した
+- コミュニティの力で翻訳を達成した
 
 +++
 
@@ -144,8 +178,8 @@ templates tests.py urls.py views.py
 
 - Django Girls Tutorial修了レベルで翻訳に参加
   - 「一歩でも先にいれば、教えられることがある」
-- コミュニティに受け入れていただけたので、今後は恩返ししていきたい
-  - Django入門した方のお役に立てるアウトプットができたら
+- 受け入れていただいたコミュニティに、今後は恩返ししていきたい
+  - 「アウトプットがDjango入門した方のお役に立てたら」
 
 +++
 
