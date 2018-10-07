@@ -1,0 +1,25 @@
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  text-transform: none;
+  word-wrap: break-word;
+}
+
+.reveal section img {
+  border: 0;
+  box-shadow: none;
+}
+
+.reveal h3 {
+  color: white;
+  background-color: #ff9400;
+  padding: 20px 0px 20px 0px;
+}
+
+.add-feature-flow-img img {
+  width: 80%;
+  height: 80%;
+}
