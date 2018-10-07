@@ -107,11 +107,7 @@ $ python manage.py startapp blog
 
 ### Djangoの使い方-機能追加手順
 
-1. 新規ページへ遷移するリンクを追加
-1. 新規ページのURL設定
-1. （新規モデル作成）
-1. 新規ページのビュー作成
-1. 新規ページのテンプレート作成
+![機能追加フロー](pyladies_Oct_Django_Girls/assets/django_add_feature.png)
 
 +++
 
