@@ -13,7 +13,7 @@
 
 +++
 
-# 祝 Django Girls<br>Tutorial 日本語版<br>Django2.0.x対応 @fa[birthday-cake]
+# 祝 @color[#ff9400](Django Girls<br>Tutorial) 日本語版<br>Django2.0.x対応 @fa[birthday-cake]
 
 +++
 
@@ -21,7 +21,7 @@
 
 - 翻訳に参加して学んだことを話します
 - ×: 翻訳は人のためにならないからやらない方がよい
-- ○: 翻訳は他の人のためだけでなく自分のためになる
+- ○: 翻訳は@color[#006bff](他の人のためだけでなく自分のためになる)
 
 +++
 
@@ -46,22 +46,22 @@
 
 - プログラミング未経験者向け
 - Djangoを使ってブログを作り、インターネットに公開する
-- 「Djangoに入門したい方にオススメ」と評価されている(個人的見解)
+- 「@color[#006bff](Djangoに入門したい方にオススメ)」と評価されている(個人的見解)
 - ※ Django：PythonでWebアプリを作るためのパッケージ
 
 +++
 
-### Django Girls Tutorial Django2.0.x対応とは
+### TutorialのDjango2.0.x対応とは
 
 - 2017年12月Djangoの2系がリリース
 - Tutorial（英語版）も2系にアップデート
-- 翻訳して日本語版Tutorialも<br>アップデート ←イマココ
+- 翻訳して日本語版Tutorialも<br>アップデート ←@color[#006bff](イマココ)
 
 +++
 
 ### Django2.0.x対応での変更点
 
-- Django2系に合わせてコードのアップデート
+- Django2系に合わせて@color[#006bff](コードのアップデート)
 
 ```python
 # mysite/urls.py
@@ -70,8 +70,8 @@
     author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
 ```
 
-- デプロイ先はPythonAnywhere（Herokuからの卒業）
-- https://tutorial.djangogirls.org/ja/
+- デプロイ先は@color[#006bff](PythonAnywhere)（Herokuからの卒業）
+- Check it now!: https://tutorial.djangogirls.org/ja/
 
 ---
 
@@ -85,7 +85,7 @@
 
 ### Django Girls Tutorial翻訳で学んだこと
 
-1. Djangoの使い方
+1. @color[#006bff](Djangoの使い方)
 1. Django Girls Tutorialに精通
 1. コミュニティの力
 
@@ -94,10 +94,14 @@
 ### Djangoの使い方
 
 - 翻訳とレビューで手を動かす中で、以下のフローを抽出
-  1. プロジェクトを作る `django-admin startproject mysite .`
-  1. アプリケーションを作る `python manage.py startapp blog`
+  1. プロジェクトを作る
+  1. アプリケーションを作る
   1. settings.py編集 `INSTALLED_APPS`など
-  1. 機能追加手順(次スライド)
+
+```shell
+$ django-admin startproject mysite .
+$ python manage.py startapp blog
+```
 
 +++
 
@@ -114,30 +118,25 @@
 ### Django Girls Tutorial翻訳で学んだこと
 
 1. Djangoの使い方
-1. Django Girls Tutorialに精通
+1. @color[#006bff](Django Girls Tutorialに精通)
+  - ここが好き
+  - お茶目なところ
 1. コミュニティの力
 
 +++
 
-### Django Girls Tutorialに精通
-
-- Django Girls Tutorialのここが好き
-- Django Girls Tutorialのお茶目なところ
-
-+++
-
-### ここが好き (@fa[heart])
+### ここが好き @fa[heart]
 
 - ブログの投稿が見つからないときに404エラーページを表示する
 - 404エラーページのカスタマイズは「super importantじゃないから、今はやらない」
 
 > But it's not super important right now, so we will skip it.
 
-- super importantなものに集中する姿勢 (@fa[heart])
+- @color[#006bff](super importantなものに集中)する姿勢 @color[#eba3ff](@fa[heart])
 
 +++
 
-### お茶目なところ
+### お茶目なところ 🤫
 
 - Pull Request上げていきます！
 - 例えば、デプロイ！ではまだ作っていないファイルがPythonAnywhereに送られています
@@ -154,15 +153,17 @@ templates tests.py urls.py views.py
 
 1. Djangoの使い方
 1. Django Girls Tutorialに精通
-1. コミュニティの力
+1. @color[#006bff](コミュニティの力)
 
 +++
 
 ### コミュニティの力
 
 - 少しずつ力を出し合って、2.0.x対応を達成
-- -> 次は多くの方に使ってほしい
-- フィードバック歓迎！（もっといいものにしていきたい）
+- Django Girls Tutorial修了レベルで翻訳に参加
+  - フォローし合って翻訳達成
+- 受け入れていただいたコミュニティに、今後は恩返ししていきたい
+  - 「Django中級者を目指すアウトプットで入門者のお役に立てたら」
 
 ---
 
@@ -176,10 +177,8 @@ templates tests.py urls.py views.py
 
 ### 思うこと
 
-- Django Girls Tutorial修了レベルで翻訳に参加
-  - 「一歩でも先にいれば、教えられることがある」
-- 受け入れていただいたコミュニティに、今後は恩返ししていきたい
-  - 「アウトプットがDjango入門した方のお役に立てたら」
+- Django 2.0.x対応のチュートリアルを、次は多くの方に使ってほしい
+- チュートリアルへのフィードバック歓迎！（もっといいものにしていきたい）
 
 +++
 
