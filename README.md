@@ -2,6 +2,7 @@
 GitPitchで作成したスライドの公開用リポジトリです。
 
 # スライド一覧
+- [翻訳は人のためならず 〜Django Girls Tutorial翻訳で学んだ3つのこと〜](https://gitpitch.com/ftnext/2018_LTSlides/master?p=pyladies_Oct_Django_Girls/) @[PyLadies Tokyo - 4周年記念パーティ](https://pyladies-tokyo.connpass.com/event/99733/)(2018/10)
 - [Entrance of Docker for Pythonista 〜Dockerではじめる機械学習モデルのデプロイ〜](https://gitpitch.com/ftnext/2018_LTSlides/master?p=stapy_Sep_docker/) @[みんなのPython勉強会#38 (2018/09) ショートトーク](https://startpython.connpass.com/event/92358/)
 - [何かを決めるということ](https://gitpitch.com/ftnext/2018_LTSlides/master?p=aniben_August_imas) @[ITエンジニアのための”アニメ”から学びを得る勉強会 | あにべん！(2018/08)](https://aniben.connpass.com/event/94950/)
 - [独学プログラマー著者イベントから共有したい3つのこと](https://gitpitch.com/ftnext/2018_LTSlides/master?p=stapy_July_self_taught) @[みんなのPython勉強会#37 (2018/07)](https://startpython.connpass.com/event/81625/)
