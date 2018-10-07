@@ -1,5 +1,5 @@
 # カスタムCSSファイル
-theme-override : common_assets/css/PITCHME.css
+theme-override : pyladies_Oct_Django_Girls/assets/PITCHME.css
 
 #スライドのページ数表示の設定
 slide-number : true
