@@ -13,7 +13,7 @@
 
 +++
 
-# 祝 Django Girls<br>Tutorial 日本語版<br>nDjango2.0.x対応 @fa[birthday-cake]
+# 祝 Django Girls<br>Tutorial 日本語版<br>Django2.0.x対応 @fa[birthday-cake]
 
 +++
 
