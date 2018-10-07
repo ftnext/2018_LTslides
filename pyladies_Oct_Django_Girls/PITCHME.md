@@ -107,7 +107,9 @@ $ python manage.py startapp blog
 
 ### Djangoの使い方-機能追加手順
 
+<span class="add-feature-flow-img">
 ![機能追加フロー](pyladies_Oct_Django_Girls/assets/django_add_feature.png)
+</span>
 
 +++
 

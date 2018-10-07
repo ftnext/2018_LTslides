@@ -18,3 +18,8 @@
   background-color: #ff9400;
   padding: 20px 0px 20px 0px;
 }
+
+.add-feature-flow-img img {
+  width: 80%;
+  height: 80%;
+}
