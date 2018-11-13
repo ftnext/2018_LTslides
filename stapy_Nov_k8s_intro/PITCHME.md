@@ -87,7 +87,7 @@
 ### Kubernetesはじめの一歩
 
 1. 9月のショートトーク要約
-2. @color[#3E6EDD](Kubernetesとは)
+2. <span class="k8s-color-highlight">Kubernetesとは</span>
 3. Kubernetesを用いたデプロイ
 
 +++
@@ -123,7 +123,7 @@
 
 1. 9月のショートトーク要約
 2. Kubernetesとは
-3. @color[#3E6EDD](Kubernetesを用いたデプロイ)
+3. <span class="k8s-color-highlight">Kubernetesを用いたデプロイ</span>
 
 +++
 
@@ -216,7 +216,7 @@ iris-web   LoadBalancer   10.0.112.236   13.78.17.226   5000:31530/TCP   35s
 ### まとめ：Kubernetesはじめの一歩
 
 - 9月トークの宿題オーケストレーションツールについてアップデート
-- DeploymentとServiceをおさえればデプロイできる
+- DeploymentとServiceをおさえれば、k8sでデプロイできる
 - 今後: Django Girls Tutorialのブログをk8sでデプロイしてみる
 
 +++
