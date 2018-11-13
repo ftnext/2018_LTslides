@@ -1,4 +1,4 @@
-# Kubernetesはじめの一歩
+# Kubernetes<br>はじめの一歩
 ## "Entrance of Docker for Pythonista"アップデート
 #### みんなのPython勉強会#39 (2018/11/14) nikkie
 
@@ -13,24 +13,39 @@
 
 ### 注意書き
 
-- Kubernetesの入り口に立ったレベルです
-- 腹落ちしきっていない部分もあり、うまく言語化できていない箇所もあります
+- Kubernetes初学者が、現時点での理解で説明します
 - Kubernetesに詳しい方からのコメント、大歓迎です！
 
 +++
 
 ### About nikkie
 
-- Software Engineer (Python & Docker @color[#eba3ff](@fa[heart]))
+- Alias @ftnext: [Twitter](https://twitter.com/ftnext), [Qiita](https://qiita.com/ftnext)
+- Software Engineer (3rd year)
+- Self-taught Python(Web Application) & Docker
 - 2018/09〜 stapy 4代目LT王子
+
++++
+
+### Recently nikkie
+
+- [はてなブログ](http://nikkie-ftnext.hatenablog.com/)
 - 2018/10〜 Django Girls Tutorial コーチ
 - 2018/11 #ploneconf2018 お手伝い
 
----
++++
 
 ### 目次
 
 1. 9月のショートトーク要約
+2. Kubernetesとは
+3. Kubernetesを用いたデプロイ
+
+---
+
+### Kubernetesはじめの一歩
+
+1. @color[#3E6EDD](9月のショートトーク要約)
 2. Kubernetesとは
 3. Kubernetesを用いたデプロイ
 
@@ -61,17 +76,18 @@
 
 +++
 
-### 9月トークの課題: 本番運用
+### 9月トークの課題の1つ: 本番運用
 
-- 本番環境ではコンテナの監視機能が必要：**オーケストレーションツール**
-- `docker run`や`docker-compose up`ではコンテナの状態を常時監視できない
+- `docker run`や`docker-compose up`は本番運用に適さない
+- コンテナの状態を常時監視できないため
+- 本番運用では **オーケストレーションツール** を使う
 
 ---
 
-### 目次
+### Kubernetesはじめの一歩
 
 1. 9月のショートトーク要約
-2. Kubernetesとは
+2. @color[#3E6EDD](Kubernetesとは)
 3. Kubernetesを用いたデプロイ
 
 +++
@@ -81,39 +97,40 @@
 - オーケストレーションツール（コンテナの監視機能を提供）のデファクトスタンダード
 - nikkieは「クバネテス」と読む派
 - 略称：k + ubernete(8文字) + s
-- クラウドベンダーは軒並み提供(GCP, AWS, Azure, IBM, ...)
 
 +++
 
-### 登場人物
+### ざっくりk8s
 
+- リソース
+  - yml形式のファイルで定義する
+  - kubectlコマンドで登録
 - クラスタ
-- リソース(ymlファイル)
-- kubectlコマンド
+  - マスタ：コンテナの管理、登録されたリソースを作る
+  - ノード：コンテナが動く
 
 +++
 
-### k8sの入り口
+### 基本のリソース2つ
 
-- リソースをymlファイルで定義する
 - 次の2つをおさえればデプロイは可能
-  - Deployment: どのDockerイメージをいくつ動かした状態とするか
-  - Service: Dockerコンテナに外部からアクセス可能にする(＝L4ロードバランサ)
+- Deployment: どのDockerイメージをいくつ動かした状態とするか
+- Service: Dockerコンテナに外部からアクセス可能にする(＝L4ロードバランサ)
 
 ---
 
-### 目次
+### Kubernetesはじめの一歩
 
 1. 9月のショートトーク要約
 2. Kubernetesとは
-3. Kubernetesを用いたデプロイ
+3. @color[#3E6EDD](Kubernetesを用いたデプロイ)
 
 +++
 
 ### k8sを用いたデプロイ
 
 1. クラスタを作成して接続（VMを作成して接続）
-1. ymlファイルを置く(deployment.yml, service.yml,)
+1. ymlファイルを置く(deployment.yml, service.yml)
 1. kubectlコマンドでデプロイ
 
 +++
@@ -176,8 +193,7 @@ spec:
 ### 3. kubectlコマンドでデプロイ
 
 ```shell
-# 前提: クラスタに接続していて、カレントディレクトリに
-# deployment.yml, service.ymlがある
+# 前提: クラスタに接続していて、カレントディレクトリに deployment.yml, service.ymlがある
 kubectl apply -f deployment.yml
 kubectl apply -f service.yml
 kubectl get svc -w
@@ -191,7 +207,9 @@ iris-web   LoadBalancer   10.0.112.236   13.78.17.226   5000:31530/TCP   35s
 
 ### 機械学習モデルのAPIが動いた！
 
-図を入れる
+<span class="api-result-img">
+![AKSで動かしたAPIのレスポンス](stapy_Nov_k8s_intro/assets/aks_flask_api.png)
+</span>
 
 ---
 
