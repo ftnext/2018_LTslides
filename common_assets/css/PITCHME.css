@@ -37,3 +37,8 @@
   width: 60%;
   height: 60%;
 }
+
+.k8s-color-highlight {
+  color: #fff;
+  background-color: #3E6EDD;
+}

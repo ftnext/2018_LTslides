@@ -45,7 +45,7 @@
 
 ### Kubernetesはじめの一歩
 
-1. @color[#3E6EDD](9月のショートトーク要約)
+1. <span class="k8s-color-highlight">9月のショートトーク要約</span>
 2. Kubernetesとは
 3. Kubernetesを用いたデプロイ
 
