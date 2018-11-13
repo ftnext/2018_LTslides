@@ -20,16 +20,9 @@
 
 ### About nikkie
 
-- Alias @ftnext: [Twitter](https://twitter.com/ftnext), [Qiita](https://qiita.com/ftnext)
-- Software Engineer (3rd year)
-- Self-taught Python(Web Application) & Docker
+- Alias @ftnext: [Twitter](https://twitter.com/ftnext), [Qiita](https://qiita.com/ftnext), [はてなブログ](http://nikkie-ftnext.hatenablog.com/)
+- Software Engineer (Python & Docker @color[#eba3ff](@fa[heart]))
 - 2018/09〜 stapy 4代目LT王子
-
-+++
-
-### Recently nikkie
-
-- [はてなブログ](http://nikkie-ftnext.hatenablog.com/)
 - 2018/10〜 Django Girls Tutorial コーチ
 - 2018/11 #ploneconf2018 お手伝い
 
