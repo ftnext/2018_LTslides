@@ -6,6 +6,3 @@ slide-number : true
 
 #トランジションの設定
 transition : none
-
-# チャートの設定
-charts : true
