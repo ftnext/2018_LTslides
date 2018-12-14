@@ -68,35 +68,25 @@
 
 +++
 
-@snap[north]
-<h3>乗客データ</h3>
-@snapend
+### 乗客データ 1/2
 
-@snap[west]
-
-@ul
 - PassengerId: 1
 - Pclass(チケットの等級): 3 (一番低い)
 - Name: Braund, Mr. Owen Harris さん
 - Sex: 男性(male)
 - Age: 22歳
 - SibSp(同乗した兄弟/配偶者): 1人
-@ulend
 
-@snapend
++++
 
-@snap[east]
+### 乗客データ 2/2
 
-@ul
 - Parch(同乗した両親/子供): 0人
 - Ticket: A/5 21171
 - Cabin: NA
 - Fare(運賃): 7.25
 - Embarked(乗船した港): S
 - →死亡
-@ulend
-
-@snapend
 
 ---
 
