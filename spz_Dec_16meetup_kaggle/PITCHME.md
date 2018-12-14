@@ -44,7 +44,7 @@
 
 ### Kaggleのタイタニックに取り組んで感じたこと
 
-- Kaggleとは？ タイタニックとは？
+- <div class="k8s-color-highlight">Kaggleとは？ タイタニックとは？</div>
 - 感じたこと
 - まとめ
 
