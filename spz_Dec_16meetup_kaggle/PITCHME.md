@@ -19,8 +19,8 @@
 ### About nikkie ([@ftnext](https://twitter.com/ftnext))
 
 - Software Engineer (3rd year)
-  - サーバサイド（Python独学 & 業務）
-  - インフラ（Docker独学、Azure業務）
+  - Server（Python独学 & 業務）
+  - Infrastructure（Docker独学、Azure業務）
 - [はてなブログ](http://nikkie-ftnext.hatenablog.com/)、[Qiita](https://qiita.com/ftnext)
 - 2018/06 meetup LT [FlaskをAzureにデプロイして知った2つのこと](https://gitpitch.com/ftnext/2018_LTSlides/master?p=spz_June_16meetup)
 
@@ -64,7 +64,7 @@
 - Kaggleの入門者用コンペ
 - https://www.kaggle.com/c/titanic
 - 沈没したタイタニック号の乗客データを扱う
-- 乗客の属性から、生存／死亡を予測（二値分類）するモデルを作り、精度(accuracy)を競う
+- 乗客の属性から、生存者／死亡者を予測するモデルを作り、精度(accuracy)を競う
 
 +++
 
@@ -114,7 +114,7 @@
 
 +++
 
-### 0.76555が全然越えられない😱
+### 0.76555が全然超えられない😱
 
 <canvas data-chart="line">
 <!--
