@@ -2,6 +2,7 @@
 GitPitchで作成したスライドの公開用リポジトリです。
 
 # スライド一覧
+- [（再演）何かを決めるということ](https://gitpitch.com/ftnext/2018_LTSlides/master?p=imastudy_Dec_re_aniben) @[アイマスハッカソン2018(2018/12)](https://imas.connpass.com/event/110232/)
 - [Kaggleのタイタニックに取り組んで感じたこと](https://gitpitch.com/ftnext/2018_LTSlides/master?p=spz_Dec_16meetup_kaggle/) @[16卒エンジニア限定 "忘年会" ミートアップ(2018/12)](https://supporterzcolab.com/event/647/)
 - [Kubernetesはじめの一歩 "Entrance of Docker for Pythonista"アップデート](https://gitpitch.com/ftnext/2018_LTSlides/master?p=stapy_Nov_k8s_intro/) @[みんなのPython勉強会#39 (2018/11)](https://startpython.connpass.com/event/101476/)
 - [継続のために 〜「わからない」と付き合うための3つの考え方〜](https://gitpitch.com/ftnext/2018_LTSlides/master?p=django_girls_Nov_for_beginners/) @[Django Girls Workshop Tokyo](https://djangogirls.org/tokyo/)(2018/11)
